@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c452a1d47f914bd98b8f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "imu_complementary_filter",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "complementary_filter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-complementary_filter-e8c79bcd163b1d59358a.json",
+					"name" : "complementary_filter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "complementary_filter_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-complementary_filter_node-63aa0e5d08dab92d5302.json",
+					"name" : "complementary_filter_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imu_complementary_filter_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imu_complementary_filter_uninstall-2eb7519c82795d7eed3a.json",
+					"name" : "imu_complementary_filter_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c4cefd43ff5505826f84.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nyu/nav_ws/build/imu_complementary_filter",
+		"source" : "/home/nyu/nav_ws/src/pb_rm_simulation/src/rm_perception/imu_complementary_filter"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

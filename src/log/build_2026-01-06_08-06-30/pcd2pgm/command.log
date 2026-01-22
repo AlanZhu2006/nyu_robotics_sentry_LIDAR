@@ -1,0 +1,3 @@
+Invoking command in '/home/nyu/nav_ws/src/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pcd2pgm -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/src/install/pcd2pgm
+Invoked command in '/home/nyu/nav_ws/src/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pcd2pgm -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/src/install/pcd2pgm
+Invoking command in '/home/nyu/nav_ws/src/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/src/build/pcd2pgm -- -j16 -l16

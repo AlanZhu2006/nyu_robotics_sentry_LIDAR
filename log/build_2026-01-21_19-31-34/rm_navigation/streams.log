@@ -1,0 +1,54 @@
+[0.189s] Invoking command in '/home/nyu/nav_ws/build/rm_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_navigation/rm_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/rm_navigation
+[0.242s] -- The C compiler identification is GNU 11.4.0
+[0.295s] -- The CXX compiler identification is GNU 11.4.0
+[0.303s] -- Detecting C compiler ABI info
+[0.378s] -- Detecting C compiler ABI info - done
+[0.387s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.387s] -- Detecting C compile features
+[0.388s] -- Detecting C compile features - done
+[0.391s] -- Detecting CXX compiler ABI info
+[0.481s] -- Detecting CXX compiler ABI info - done
+[0.491s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.491s] -- Detecting CXX compile features
+[0.492s] -- Detecting CXX compile features - done
+[0.494s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.642s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.694s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.720s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.789s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.791s] -- Added test 'lint_cmake' to check CMake code style
+[0.791s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.792s] -- Added test 'xmllint' to check XML markup files
+[0.795s] -- Configuring done
+[0.798s] -- Generating done
+[0.800s] -- Build files have been written to: /home/nyu/nav_ws/build/rm_navigation
+[0.804s] Invoked command in '/home/nyu/nav_ws/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_navigation/rm_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/rm_navigation
+[0.809s] Invoking command in '/home/nyu/nav_ws/build/rm_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/rm_navigation -- -j16 -l16
+[0.850s] Invoked command in '/home/nyu/nav_ws/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/rm_navigation -- -j16 -l16
+[0.864s] Invoking command in '/home/nyu/nav_ws/build/rm_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/rm_navigation
+[0.877s] -- Install configuration: ""
+[0.877s] -- Execute custom install script
+[0.877s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/params/mapper_params_online_async.yaml
+[0.887s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/params/nav2_params.yaml
+[0.903s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/rviz/nav2.rviz
+[0.915s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/launch/bringup_rm_navigation.py
+[0.927s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/launch/localization_amcl_launch.py
+[0.940s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/launch/map_server_launch.py
+[0.951s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/launch/navigation_launch.py
+[0.966s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/launch/rviz_launch.py
+[0.988s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/ament_index/resource_index/package_run_dependencies/rm_navigation
+[1.007s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/ament_index/resource_index/parent_prefix_path/rm_navigation
+[1.028s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/environment/ament_prefix_path.sh
+[1.046s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/environment/ament_prefix_path.dsv
+[1.060s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/environment/path.sh
+[1.077s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/environment/path.dsv
+[1.092s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/local_setup.bash
+[1.103s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/local_setup.sh
+[1.118s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/local_setup.zsh
+[1.130s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/local_setup.dsv
+[1.148s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/package.dsv
+[1.171s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/ament_index/resource_index/packages/rm_navigation
+[1.181s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/cmake/rm_navigationConfig.cmake
+[1.194s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/cmake/rm_navigationConfig-version.cmake
+[1.209s] -- Symlinking: /home/nyu/nav_ws/install/rm_navigation/share/rm_navigation/package.xml
+[1.236s] Invoked command in '/home/nyu/nav_ws/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/rm_navigation

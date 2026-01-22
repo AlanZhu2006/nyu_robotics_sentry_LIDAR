@@ -1,0 +1,629 @@
+[0.000000] (-) TimerEvent: {}
+[0.000508] (livox_ros_driver2) JobQueued: {'identifier': 'livox_ros_driver2', 'dependencies': OrderedDict()}
+[0.000553] (map2gazebo) JobQueued: {'identifier': 'map2gazebo', 'dependencies': OrderedDict()}
+[0.000565] (pcd2pgm) JobQueued: {'identifier': 'pcd2pgm', 'dependencies': OrderedDict()}
+[0.000575] (point_lio) JobQueued: {'identifier': 'point_lio', 'dependencies': OrderedDict()}
+[0.000583] (unitree_lidar_ros2) JobQueued: {'identifier': 'unitree_lidar_ros2', 'dependencies': OrderedDict()}
+[0.000592] (unitree_lidar_sdk) JobQueued: {'identifier': 'unitree_lidar_sdk', 'dependencies': OrderedDict()}
+[0.000601] (livox_ros_driver2) JobStarted: {'identifier': 'livox_ros_driver2'}
+[0.005549] (map2gazebo) JobStarted: {'identifier': 'map2gazebo'}
+[0.009407] (pcd2pgm) JobStarted: {'identifier': 'pcd2pgm'}
+[0.011185] (point_lio) JobStarted: {'identifier': 'point_lio'}
+[0.014400] (unitree_lidar_ros2) JobStarted: {'identifier': 'unitree_lidar_ros2'}
+[0.018135] (unitree_lidar_sdk) JobStarted: {'identifier': 'unitree_lidar_sdk'}
+[0.025782] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'cmake'}
+[0.026994] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '/home/nyu/nav_ws/src/livox_ros_driver2', '-DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/src/install/livox_ros_driver2'], 'cwd': '/home/nyu/nav_ws/src/build/livox_ros_driver2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nyu/nav_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/livox_ros_driver2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099730] (-) TimerEvent: {}
+[0.199943] (-) TimerEvent: {}
+[0.218196] (pcd2pgm) JobProgress: {'identifier': 'pcd2pgm', 'progress': 'cmake'}
+[0.218882] (pcd2pgm) JobProgress: {'identifier': 'pcd2pgm', 'progress': 'build'}
+[0.220684] (pcd2pgm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nyu/nav_ws/src/build/pcd2pgm', '--', '-j16', '-l16'], 'cwd': '/home/nyu/nav_ws/src/build/pcd2pgm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nyu/nav_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/pcd2pgm'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.221537] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'cmake'}
+[0.222579] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'build'}
+[0.223201] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nyu/nav_ws/src/build/point_lio', '--', '-j16', '-l16'], 'cwd': '/home/nyu/nav_ws/src/build/point_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nyu/nav_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/point_lio'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.225004] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'cmake'}
+[0.225319] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'build'}
+[0.225790] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nyu/nav_ws/src/build/unitree_lidar_ros2', '--', '-j16', '-l16'], 'cwd': '/home/nyu/nav_ws/src/build/unitree_lidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nyu/nav_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/unitree_lidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.227928] (livox_ros_driver2) StdoutLine: {'line': b'-- livox_ros_driver2 version: 1.2.4\n'}
+[0.228025] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.228078] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.228125] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.229381] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'cmake'}
+[0.229637] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'build'}
+[0.229848] (unitree_lidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nyu/nav_ws/src/build/unitree_lidar_sdk', '--', '-j16', '-l16'], 'cwd': '/home/nyu/nav_ws/src/build/unitree_lidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nyu/nav_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/unitree_lidar_sdk'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.244673] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.270122] (pcd2pgm) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pcd2pgm\x1b[0m\n'}
+[0.271619] (pcd2pgm) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pcd2pgm_node\x1b[0m\n'}
+[0.274143] (unitree_lidar_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target set_ip_address\x1b[0m\n'}
+[0.278078] (unitree_lidar_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target example_lidar_udp\x1b[0m\n'}
+[0.278388] (unitree_lidar_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target set_to_udp_mode\x1b[0m\n'}
+[0.278515] (unitree_lidar_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target example_lidar_serial\x1b[0m\n'}
+[0.278618] (unitree_lidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target unitree_lidar_ros2_node\x1b[0m\n'}
+[0.280721] (unitree_lidar_sdk) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target set_to_serial_mode\x1b[0m\n'}
+[0.287364] (point_lio) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pointlio_mapping\x1b[0m\n'}
+[0.293141] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 40%] Built target set_to_udp_mode\n'}
+[0.293442] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 40%] Built target set_ip_address\n'}
+[0.293640] (pcd2pgm) StdoutLine: {'line': b'[ 50%] Built target pcd2pgm_node\n'}
+[0.295253] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 80%] Built target example_lidar_serial\n'}
+[0.295414] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 80%] Built target example_lidar_udp\n'}
+[0.299160] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target set_to_serial_mode\n'}
+[0.300016] (-) TimerEvent: {}
+[0.301410] (pcd2pgm) StdoutLine: {'line': b'[100%] Built target pcd2pgm\n'}
+[0.310181] (unitree_lidar_ros2) StdoutLine: {'line': b'[100%] Built target unitree_lidar_ros2_node\n'}
+[0.311986] (unitree_lidar_sdk) CommandEnded: {'returncode': 0}
+[0.322979] (unitree_lidar_sdk) JobEnded: {'identifier': 'unitree_lidar_sdk', 'rc': 0}
+[0.325588] (pcd2pgm) CommandEnded: {'returncode': 0}
+[0.325989] (pcd2pgm) JobProgress: {'identifier': 'pcd2pgm', 'progress': 'install'}
+[0.326028] (point_lio) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[0.333267] (pcd2pgm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nyu/nav_ws/src/build/pcd2pgm'], 'cwd': '/home/nyu/nav_ws/src/build/pcd2pgm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nyu/nav_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/pcd2pgm'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.334901] (unitree_lidar_ros2) CommandEnded: {'returncode': 0}
+[0.335529] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'install'}
+[0.336109] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nyu/nav_ws/src/build/unitree_lidar_ros2'], 'cwd': '/home/nyu/nav_ws/src/build/unitree_lidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nyu/nav_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/unitree_lidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.337864] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.338491] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.343092] (pcd2pgm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.343373] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/lib/pcd2pgm/pcd2pgm_node\n'}
+[0.343819] (pcd2pgm) StdoutLine: {'line': b'-- Set runtime path of "/home/nyu/nav_ws/src/install/pcd2pgm/lib/pcd2pgm/pcd2pgm_node" to ""\n'}
+[0.344248] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/include/pcd2pgm\n'}
+[0.344393] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/include/pcd2pgm/pcd2pgm\n'}
+[0.344506] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/include/pcd2pgm/pcd2pgm/pcd2pgm.hpp\n'}
+[0.344669] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/library_path.sh\n'}
+[0.344878] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/library_path.dsv\n'}
+[0.345045] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/lib/libpcd2pgm.so\n'}
+[0.349115] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.349419] (pcd2pgm) StdoutLine: {'line': b'-- Set runtime path of "/home/nyu/nav_ws/src/install/pcd2pgm/lib/libpcd2pgm.so" to ""\n'}
+[0.349518] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/config\n'}
+[0.349608] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/lib/unitree_lidar_ros2/unitree_lidar_ros2_node\n'}
+[0.349694] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/config/pcd2pgm.yaml\n'}
+[0.349817] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/launch\n'}
+[0.349941] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/launch/pcd2pgm_launch.py\n'}
+[0.350062] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/rviz\n'}
+[0.350186] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/rviz/pcd2pgm.rviz\n'}
+[0.350265] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/ament_index/resource_index/package_run_dependencies/pcd2pgm\n'}
+[0.350331] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/ament_index/resource_index/parent_prefix_path/pcd2pgm\n'}
+[0.350416] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/ament_prefix_path.sh\n'}
+[0.350507] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/ament_prefix_path.dsv\n'}
+[0.350578] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/path.sh\n'}
+[0.350676] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/path.dsv\n'}
+[0.350772] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/local_setup.bash\n'}
+[0.350841] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/local_setup.sh\n'}
+[0.350929] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/local_setup.zsh\n'}
+[0.351013] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/local_setup.dsv\n'}
+[0.351096] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/package.dsv\n'}
+[0.351167] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/ament_index/resource_index/packages/pcd2pgm\n'}
+[0.351241] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/ament_index/resource_index/rclcpp_components/pcd2pgm\n'}
+[0.351318] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.351393] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.351469] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.351608] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/pcd2pgmConfig.cmake\n'}
+[0.351682] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/nyu/nav_ws/src/install/unitree_lidar_ros2/lib/unitree_lidar_ros2/unitree_lidar_ros2_node" to ""\n'}
+[0.351793] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/pcd2pgmConfig-version.cmake\n'}
+[0.351878] (pcd2pgm) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/package.xml\n'}
+[0.351960] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/view.rviz\n'}
+[0.352149] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/launch.py\n'}
+[0.352711] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/ament_index/resource_index/package_run_dependencies/unitree_lidar_ros2\n'}
+[0.353174] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/ament_index/resource_index/parent_prefix_path/unitree_lidar_ros2\n'}
+[0.353341] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.sh\n'}
+[0.353431] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.dsv\n'}
+[0.353671] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.sh\n'}
+[0.353762] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.dsv\n'}
+[0.354113] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.bash\n'}
+[0.354646] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.sh\n'}
+[0.354742] (pcd2pgm) CommandEnded: {'returncode': 0}
+[0.355976] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.zsh\n'}
+[0.356157] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.dsv\n'}
+[0.356254] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.dsv\n'}
+[0.356346] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/ament_index/resource_index/packages/unitree_lidar_ros2\n'}
+[0.356435] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config.cmake\n'}
+[0.356523] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config-version.cmake\n'}
+[0.356604] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Installing: /home/nyu/nav_ws/src/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.xml\n'}
+[0.374949] (pcd2pgm) JobEnded: {'identifier': 'pcd2pgm', 'rc': 0}
+[0.376688] (unitree_lidar_ros2) CommandEnded: {'returncode': 0}
+[0.393410] (unitree_lidar_ros2) JobEnded: {'identifier': 'unitree_lidar_ros2', 'rc': 0}
+[0.400176] (-) TimerEvent: {}
+[0.431567] (livox_ros_driver2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500262] (-) TimerEvent: {}
+[0.544522] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.550927] (map2gazebo) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/map2gazebo', 'build', '--build-base', '/home/nyu/nav_ws/src/build/map2gazebo/build', 'install', '--record', '/home/nyu/nav_ws/src/build/map2gazebo/install.log', '--install-scripts', '$base/lib/map2gazebo', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nyu/nav_ws/src/map2gazebo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nyu', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/nyu', 'OLDPWD': '/home/nyu/nav_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '72979', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/nyu/nav_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'nyu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nyu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.C6URI3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.244', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nyu/nav_ws/src/build/map2gazebo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nyu/nav_ws/src/build/map2gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.568386] (livox_ros_driver2) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.600373] (-) TimerEvent: {}
+[0.700709] (-) TimerEvent: {}
+[0.729850] (map2gazebo) StderrLine: {'line': b"/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[0.730213] (map2gazebo) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.736002] (map2gazebo) StdoutLine: {'line': b'running egg_info\n'}
+[0.736434] (map2gazebo) StdoutLine: {'line': b'creating ../build/map2gazebo/map2gazebo.egg-info\n'}
+[0.736654] (map2gazebo) StdoutLine: {'line': b'writing ../build/map2gazebo/map2gazebo.egg-info/PKG-INFO\n'}
+[0.736889] (map2gazebo) StdoutLine: {'line': b'writing dependency_links to ../build/map2gazebo/map2gazebo.egg-info/dependency_links.txt\n'}
+[0.737016] (map2gazebo) StdoutLine: {'line': b'writing entry points to ../build/map2gazebo/map2gazebo.egg-info/entry_points.txt\n'}
+[0.737139] (map2gazebo) StdoutLine: {'line': b'writing requirements to ../build/map2gazebo/map2gazebo.egg-info/requires.txt\n'}
+[0.737245] (map2gazebo) StdoutLine: {'line': b'writing top-level names to ../build/map2gazebo/map2gazebo.egg-info/top_level.txt\n'}
+[0.737320] (map2gazebo) StdoutLine: {'line': b"writing manifest file '../build/map2gazebo/map2gazebo.egg-info/SOURCES.txt'\n"}
+[0.738707] (map2gazebo) StdoutLine: {'line': b"reading manifest file '../build/map2gazebo/map2gazebo.egg-info/SOURCES.txt'\n"}
+[0.739383] (map2gazebo) StdoutLine: {'line': b"writing manifest file '../build/map2gazebo/map2gazebo.egg-info/SOURCES.txt'\n"}
+[0.739542] (map2gazebo) StdoutLine: {'line': b'running build\n'}
+[0.739623] (map2gazebo) StdoutLine: {'line': b'running build_py\n'}
+[0.739730] (map2gazebo) StdoutLine: {'line': b'creating /home/nyu/nav_ws/src/build/map2gazebo/build\n'}
+[0.739859] (map2gazebo) StdoutLine: {'line': b'creating /home/nyu/nav_ws/src/build/map2gazebo/build/lib\n'}
+[0.739988] (map2gazebo) StdoutLine: {'line': b'creating /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo\n'}
+[0.740087] (map2gazebo) StdoutLine: {'line': b'copying map2gazebo/map2gazebo.py -> /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo\n'}
+[0.740171] (map2gazebo) StdoutLine: {'line': b'copying map2gazebo/__init__.py -> /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo\n'}
+[0.740250] (map2gazebo) StdoutLine: {'line': b'copying map2gazebo/map2gazebo_offline.py -> /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo\n'}
+[0.740329] (map2gazebo) StdoutLine: {'line': b'running install\n'}
+[0.740407] (map2gazebo) StdoutLine: {'line': b'running install_lib\n'}
+[0.740858] (map2gazebo) StdoutLine: {'line': b'creating /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo\n'}
+[0.740941] (map2gazebo) StdoutLine: {'line': b'copying /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo/map2gazebo.py -> /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo\n'}
+[0.741028] (map2gazebo) StdoutLine: {'line': b'copying /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo/__init__.py -> /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo\n'}
+[0.741086] (map2gazebo) StdoutLine: {'line': b'copying /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo/map2gazebo_offline.py -> /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo\n'}
+[0.741258] (map2gazebo) StdoutLine: {'line': b'byte-compiling /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo/map2gazebo.py to map2gazebo.cpython-310.pyc\n'}
+[0.742269] (map2gazebo) StdoutLine: {'line': b'byte-compiling /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo/__init__.py to __init__.cpython-310.pyc\n'}
+[0.742359] (map2gazebo) StdoutLine: {'line': b'byte-compiling /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo/map2gazebo_offline.py to map2gazebo_offline.cpython-310.pyc\n'}
+[0.742974] (map2gazebo) StdoutLine: {'line': b'running install_data\n'}
+[0.743072] (map2gazebo) StdoutLine: {'line': b'creating /home/nyu/nav_ws/src/install/map2gazebo/share/ament_index\n'}
+[0.743135] (map2gazebo) StdoutLine: {'line': b'creating /home/nyu/nav_ws/src/install/map2gazebo/share/ament_index/resource_index\n'}
+[0.743195] (map2gazebo) StdoutLine: {'line': b'creating /home/nyu/nav_ws/src/install/map2gazebo/share/ament_index/resource_index/packages\n'}
+[0.743286] (map2gazebo) StdoutLine: {'line': b'copying resource/map2gazebo -> /home/nyu/nav_ws/src/install/map2gazebo/share/ament_index/resource_index/packages\n'}
+[0.743348] (map2gazebo) StdoutLine: {'line': b'copying package.xml -> /home/nyu/nav_ws/src/install/map2gazebo/share/map2gazebo\n'}
+[0.743406] (map2gazebo) StdoutLine: {'line': b'copying launch/map2gazebo.launch.py -> /home/nyu/nav_ws/src/install/map2gazebo/share/map2gazebo\n'}
+[0.743464] (map2gazebo) StdoutLine: {'line': b'copying config/default.yaml -> /home/nyu/nav_ws/src/install/map2gazebo/share/map2gazebo\n'}
+[0.743521] (map2gazebo) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.744426] (map2gazebo) StdoutLine: {'line': b'Copying ../build/map2gazebo/map2gazebo.egg-info to /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo-0.0.0-py3.10.egg-info\n'}
+[0.744719] (map2gazebo) StdoutLine: {'line': b'running install_scripts\n'}
+[0.766656] (map2gazebo) StdoutLine: {'line': b'Installing map2gazebo script to /home/nyu/nav_ws/src/install/map2gazebo/lib/map2gazebo\n'}
+[0.766930] (map2gazebo) StdoutLine: {'line': b"writing list of installed files to '/home/nyu/nav_ws/src/build/map2gazebo/install.log'\n"}
+[0.789167] (map2gazebo) CommandEnded: {'returncode': 0}
+[0.798298] (map2gazebo) JobEnded: {'identifier': 'map2gazebo', 'rc': 0}
+[0.800784] (-) TimerEvent: {}
+[0.869646] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.876257] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.900987] (-) TimerEvent: {}
+[1.001249] (-) TimerEvent: {}
+[1.011939] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.020096] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.026732] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.101356] (-) TimerEvent: {}
+[1.152977] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.201461] (-) TimerEvent: {}
+[1.288360] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.301547] (-) TimerEvent: {}
+[1.401841] (-) TimerEvent: {}
+[1.449225] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'apr-1'\n"}
+[1.451147] (livox_ros_driver2) StdoutLine: {'line': b"--   No package 'apr-1' found\n"}
+[1.501929] (-) TimerEvent: {}
+[1.602193] (-) TimerEvent: {}
+[1.633277] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.702292] (-) TimerEvent: {}
+[1.802584] (-) TimerEvent: {}
+[1.836511] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.902692] (-) TimerEvent: {}
+[2.002977] (-) TimerEvent: {}
+[2.103355] (-) TimerEvent: {}
+[2.103610] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.125779] (livox_ros_driver2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.145845] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.146028] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.146094] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.180581] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.186392] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.189252] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.189986] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nyu/nav_ws/src/livox_ros_driver2/3rdparty;/home/nyu/nav_ws/src/livox_ros_driver2/src\n'}
+[2.190087] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.193505] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.193621] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.194222] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.195156] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.195771] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.199314] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.199476] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.199868] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.201213] (livox_ros_driver2) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.203415] (-) TimerEvent: {}
+[2.204499] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0mCMake Error: The following variables are used in this project, but they are set to NOTFOUND.\n'}
+[2.204621] (livox_ros_driver2) StderrLine: {'line': b'Please set them or make sure they are set and tested correctly in the CMake files:\n'}
+[2.204686] (livox_ros_driver2) StderrLine: {'line': b'/home/nyu/nav_ws/src/livox_ros_driver2/LIVOX_INTERFACES_INCLUDE_DIRECTORIES\n'}
+[2.204745] (livox_ros_driver2) StderrLine: {'line': b'   used as include directory in directory /home/nyu/nav_ws/src/livox_ros_driver2\n'}
+[2.204803] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[2.246664] (livox_ros_driver2) StdoutLine: {'line': b'-- Generating done\n'}
+[2.248872] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[2.269081] (livox_ros_driver2) CommandEnded: {'returncode': 1}
+[2.286521] (livox_ros_driver2) JobEnded: {'identifier': 'livox_ros_driver2', 'rc': 1}
+[2.303484] (-) TimerEvent: {}
+[2.403818] (-) TimerEvent: {}
+[2.504198] (-) TimerEvent: {}
+[2.604779] (-) TimerEvent: {}
+[2.705148] (-) TimerEvent: {}
+[2.805471] (-) TimerEvent: {}
+[2.906035] (-) TimerEvent: {}
+[3.006455] (-) TimerEvent: {}
+[3.106967] (-) TimerEvent: {}
+[3.207272] (-) TimerEvent: {}
+[3.307532] (-) TimerEvent: {}
+[3.407786] (-) TimerEvent: {}
+[3.508132] (-) TimerEvent: {}
+[3.608744] (-) TimerEvent: {}
+[3.709004] (-) TimerEvent: {}
+[3.809396] (-) TimerEvent: {}
+[3.909911] (-) TimerEvent: {}
+[4.010184] (-) TimerEvent: {}
+[4.110513] (-) TimerEvent: {}
+[4.210843] (-) TimerEvent: {}
+[4.311216] (-) TimerEvent: {}
+[4.411549] (-) TimerEvent: {}
+[4.512055] (-) TimerEvent: {}
+[4.612764] (-) TimerEvent: {}
+[4.713342] (-) TimerEvent: {}
+[4.813649] (-) TimerEvent: {}
+[4.914056] (-) TimerEvent: {}
+[5.014461] (-) TimerEvent: {}
+[5.114881] (-) TimerEvent: {}
+[5.215238] (-) TimerEvent: {}
+[5.315649] (-) TimerEvent: {}
+[5.415936] (-) TimerEvent: {}
+[5.516234] (-) TimerEvent: {}
+[5.616534] (-) TimerEvent: {}
+[5.716853] (-) TimerEvent: {}
+[5.817206] (-) TimerEvent: {}
+[5.917519] (-) TimerEvent: {}
+[6.017972] (-) TimerEvent: {}
+[6.118256] (-) TimerEvent: {}
+[6.218541] (-) TimerEvent: {}
+[6.318841] (-) TimerEvent: {}
+[6.419218] (-) TimerEvent: {}
+[6.519622] (-) TimerEvent: {}
+[6.620162] (-) TimerEvent: {}
+[6.720461] (-) TimerEvent: {}
+[6.820785] (-) TimerEvent: {}
+[6.921081] (-) TimerEvent: {}
+[7.021440] (-) TimerEvent: {}
+[7.121793] (-) TimerEvent: {}
+[7.222258] (-) TimerEvent: {}
+[7.322673] (-) TimerEvent: {}
+[7.423096] (-) TimerEvent: {}
+[7.523491] (-) TimerEvent: {}
+[7.623860] (-) TimerEvent: {}
+[7.724238] (-) TimerEvent: {}
+[7.824627] (-) TimerEvent: {}
+[7.924981] (-) TimerEvent: {}
+[8.025534] (-) TimerEvent: {}
+[8.126127] (-) TimerEvent: {}
+[8.226399] (-) TimerEvent: {}
+[8.326667] (-) TimerEvent: {}
+[8.427095] (-) TimerEvent: {}
+[8.527827] (-) TimerEvent: {}
+[8.628493] (-) TimerEvent: {}
+[8.729050] (-) TimerEvent: {}
+[8.829327] (-) TimerEvent: {}
+[8.929732] (-) TimerEvent: {}
+[9.030000] (-) TimerEvent: {}
+[9.130328] (-) TimerEvent: {}
+[9.230761] (-) TimerEvent: {}
+[9.331141] (-) TimerEvent: {}
+[9.431496] (-) TimerEvent: {}
+[9.531853] (-) TimerEvent: {}
+[9.632233] (-) TimerEvent: {}
+[9.732567] (-) TimerEvent: {}
+[9.832862] (-) TimerEvent: {}
+[9.933194] (-) TimerEvent: {}
+[10.033514] (-) TimerEvent: {}
+[10.133998] (-) TimerEvent: {}
+[10.234445] (-) TimerEvent: {}
+[10.334977] (-) TimerEvent: {}
+[10.435251] (-) TimerEvent: {}
+[10.535540] (-) TimerEvent: {}
+[10.635836] (-) TimerEvent: {}
+[10.736290] (-) TimerEvent: {}
+[10.836760] (-) TimerEvent: {}
+[10.937574] (-) TimerEvent: {}
+[11.038110] (-) TimerEvent: {}
+[11.138559] (-) TimerEvent: {}
+[11.239076] (-) TimerEvent: {}
+[11.339514] (-) TimerEvent: {}
+[11.440354] (-) TimerEvent: {}
+[11.540939] (-) TimerEvent: {}
+[11.641364] (-) TimerEvent: {}
+[11.741820] (-) TimerEvent: {}
+[11.842401] (-) TimerEvent: {}
+[11.942936] (-) TimerEvent: {}
+[12.043483] (-) TimerEvent: {}
+[12.143815] (-) TimerEvent: {}
+[12.244179] (-) TimerEvent: {}
+[12.344524] (-) TimerEvent: {}
+[12.444987] (-) TimerEvent: {}
+[12.545288] (-) TimerEvent: {}
+[12.645549] (-) TimerEvent: {}
+[12.745854] (-) TimerEvent: {}
+[12.846170] (-) TimerEvent: {}
+[12.946500] (-) TimerEvent: {}
+[13.046887] (-) TimerEvent: {}
+[13.147350] (-) TimerEvent: {}
+[13.247777] (-) TimerEvent: {}
+[13.348061] (-) TimerEvent: {}
+[13.448398] (-) TimerEvent: {}
+[13.548709] (-) TimerEvent: {}
+[13.649046] (-) TimerEvent: {}
+[13.749438] (-) TimerEvent: {}
+[13.849858] (-) TimerEvent: {}
+[13.950222] (-) TimerEvent: {}
+[14.050509] (-) TimerEvent: {}
+[14.150824] (-) TimerEvent: {}
+[14.251065] (-) TimerEvent: {}
+[14.351376] (-) TimerEvent: {}
+[14.451734] (-) TimerEvent: {}
+[14.552074] (-) TimerEvent: {}
+[14.652428] (-) TimerEvent: {}
+[14.753053] (-) TimerEvent: {}
+[14.853370] (-) TimerEvent: {}
+[14.953684] (-) TimerEvent: {}
+[15.054069] (-) TimerEvent: {}
+[15.154411] (-) TimerEvent: {}
+[15.254797] (-) TimerEvent: {}
+[15.355140] (-) TimerEvent: {}
+[15.455439] (-) TimerEvent: {}
+[15.555718] (-) TimerEvent: {}
+[15.656073] (-) TimerEvent: {}
+[15.756369] (-) TimerEvent: {}
+[15.856675] (-) TimerEvent: {}
+[15.957045] (-) TimerEvent: {}
+[16.057519] (-) TimerEvent: {}
+[16.157951] (-) TimerEvent: {}
+[16.258430] (-) TimerEvent: {}
+[16.358863] (-) TimerEvent: {}
+[16.459454] (-) TimerEvent: {}
+[16.559983] (-) TimerEvent: {}
+[16.660307] (-) TimerEvent: {}
+[16.760654] (-) TimerEvent: {}
+[16.861026] (-) TimerEvent: {}
+[16.961341] (-) TimerEvent: {}
+[17.061705] (-) TimerEvent: {}
+[17.162065] (-) TimerEvent: {}
+[17.262354] (-) TimerEvent: {}
+[17.362671] (-) TimerEvent: {}
+[17.462960] (-) TimerEvent: {}
+[17.563319] (-) TimerEvent: {}
+[17.663685] (-) TimerEvent: {}
+[17.764029] (-) TimerEvent: {}
+[17.864402] (-) TimerEvent: {}
+[17.964689] (-) TimerEvent: {}
+[18.065009] (-) TimerEvent: {}
+[18.165380] (-) TimerEvent: {}
+[18.265711] (-) TimerEvent: {}
+[18.366044] (-) TimerEvent: {}
+[18.466357] (-) TimerEvent: {}
+[18.566673] (-) TimerEvent: {}
+[18.667000] (-) TimerEvent: {}
+[18.767291] (-) TimerEvent: {}
+[18.867593] (-) TimerEvent: {}
+[18.968001] (-) TimerEvent: {}
+[19.068375] (-) TimerEvent: {}
+[19.168667] (-) TimerEvent: {}
+[19.268939] (-) TimerEvent: {}
+[19.369223] (-) TimerEvent: {}
+[19.469537] (-) TimerEvent: {}
+[19.569935] (-) TimerEvent: {}
+[19.670257] (-) TimerEvent: {}
+[19.770539] (-) TimerEvent: {}
+[19.870910] (-) TimerEvent: {}
+[19.971206] (-) TimerEvent: {}
+[20.071753] (-) TimerEvent: {}
+[20.172322] (-) TimerEvent: {}
+[20.273001] (-) TimerEvent: {}
+[20.373368] (-) TimerEvent: {}
+[20.473671] (-) TimerEvent: {}
+[20.574039] (-) TimerEvent: {}
+[20.674390] (-) TimerEvent: {}
+[20.774769] (-) TimerEvent: {}
+[20.875022] (-) TimerEvent: {}
+[20.975299] (-) TimerEvent: {}
+[21.075613] (-) TimerEvent: {}
+[21.175941] (-) TimerEvent: {}
+[21.276237] (-) TimerEvent: {}
+[21.376819] (-) TimerEvent: {}
+[21.477242] (-) TimerEvent: {}
+[21.577600] (-) TimerEvent: {}
+[21.677853] (-) TimerEvent: {}
+[21.778229] (-) TimerEvent: {}
+[21.878697] (-) TimerEvent: {}
+[21.979030] (-) TimerEvent: {}
+[22.079530] (-) TimerEvent: {}
+[22.179902] (-) TimerEvent: {}
+[22.280102] (-) TimerEvent: {}
+[22.380358] (-) TimerEvent: {}
+[22.480680] (-) TimerEvent: {}
+[22.581285] (-) TimerEvent: {}
+[22.681564] (-) TimerEvent: {}
+[22.782012] (-) TimerEvent: {}
+[22.882332] (-) TimerEvent: {}
+[22.982764] (-) TimerEvent: {}
+[23.083052] (-) TimerEvent: {}
+[23.183393] (-) TimerEvent: {}
+[23.283827] (-) TimerEvent: {}
+[23.384235] (-) TimerEvent: {}
+[23.484561] (-) TimerEvent: {}
+[23.584869] (-) TimerEvent: {}
+[23.685184] (-) TimerEvent: {}
+[23.785480] (-) TimerEvent: {}
+[23.885787] (-) TimerEvent: {}
+[23.986099] (-) TimerEvent: {}
+[24.086373] (-) TimerEvent: {}
+[24.186656] (-) TimerEvent: {}
+[24.286996] (-) TimerEvent: {}
+[24.387288] (-) TimerEvent: {}
+[24.487587] (-) TimerEvent: {}
+[24.587989] (-) TimerEvent: {}
+[24.688365] (-) TimerEvent: {}
+[24.788825] (-) TimerEvent: {}
+[24.889182] (-) TimerEvent: {}
+[24.989544] (-) TimerEvent: {}
+[25.089871] (-) TimerEvent: {}
+[25.190208] (-) TimerEvent: {}
+[25.290579] (-) TimerEvent: {}
+[25.391205] (-) TimerEvent: {}
+[25.491601] (-) TimerEvent: {}
+[25.592160] (-) TimerEvent: {}
+[25.692811] (-) TimerEvent: {}
+[25.793209] (-) TimerEvent: {}
+[25.893549] (-) TimerEvent: {}
+[25.993945] (-) TimerEvent: {}
+[26.094224] (-) TimerEvent: {}
+[26.194526] (-) TimerEvent: {}
+[26.294955] (-) TimerEvent: {}
+[26.395419] (-) TimerEvent: {}
+[26.495879] (-) TimerEvent: {}
+[26.596189] (-) TimerEvent: {}
+[26.696457] (-) TimerEvent: {}
+[26.796773] (-) TimerEvent: {}
+[26.897074] (-) TimerEvent: {}
+[26.997487] (-) TimerEvent: {}
+[27.097967] (-) TimerEvent: {}
+[27.198252] (-) TimerEvent: {}
+[27.298603] (-) TimerEvent: {}
+[27.398871] (-) TimerEvent: {}
+[27.499186] (-) TimerEvent: {}
+[27.599463] (-) TimerEvent: {}
+[27.699782] (-) TimerEvent: {}
+[27.800115] (-) TimerEvent: {}
+[27.900449] (-) TimerEvent: {}
+[28.000736] (-) TimerEvent: {}
+[28.100995] (-) TimerEvent: {}
+[28.201230] (-) TimerEvent: {}
+[28.301514] (-) TimerEvent: {}
+[28.401778] (-) TimerEvent: {}
+[28.502115] (-) TimerEvent: {}
+[28.602429] (-) TimerEvent: {}
+[28.702709] (-) TimerEvent: {}
+[28.802941] (-) TimerEvent: {}
+[28.903219] (-) TimerEvent: {}
+[29.003530] (-) TimerEvent: {}
+[29.103825] (-) TimerEvent: {}
+[29.204145] (-) TimerEvent: {}
+[29.304699] (-) TimerEvent: {}
+[29.405000] (-) TimerEvent: {}
+[29.505265] (-) TimerEvent: {}
+[29.605510] (-) TimerEvent: {}
+[29.706078] (-) TimerEvent: {}
+[29.806672] (-) TimerEvent: {}
+[29.907242] (-) TimerEvent: {}
+[30.007561] (-) TimerEvent: {}
+[30.107907] (-) TimerEvent: {}
+[30.208279] (-) TimerEvent: {}
+[30.308647] (-) TimerEvent: {}
+[30.408971] (-) TimerEvent: {}
+[30.509332] (-) TimerEvent: {}
+[30.609649] (-) TimerEvent: {}
+[30.709917] (-) TimerEvent: {}
+[30.810241] (-) TimerEvent: {}
+[30.910611] (-) TimerEvent: {}
+[31.010856] (-) TimerEvent: {}
+[31.111133] (-) TimerEvent: {}
+[31.211637] (-) TimerEvent: {}
+[31.311954] (-) TimerEvent: {}
+[31.412356] (-) TimerEvent: {}
+[31.512682] (-) TimerEvent: {}
+[31.612974] (-) TimerEvent: {}
+[31.713273] (-) TimerEvent: {}
+[31.813545] (-) TimerEvent: {}
+[31.913811] (-) TimerEvent: {}
+[32.014105] (-) TimerEvent: {}
+[32.114497] (-) TimerEvent: {}
+[32.214968] (-) TimerEvent: {}
+[32.315288] (-) TimerEvent: {}
+[32.415784] (-) TimerEvent: {}
+[32.516130] (-) TimerEvent: {}
+[32.616439] (-) TimerEvent: {}
+[32.716778] (-) TimerEvent: {}
+[32.817061] (-) TimerEvent: {}
+[32.917412] (-) TimerEvent: {}
+[33.017853] (-) TimerEvent: {}
+[33.118112] (-) TimerEvent: {}
+[33.218345] (-) TimerEvent: {}
+[33.318732] (-) TimerEvent: {}
+[33.418954] (-) TimerEvent: {}
+[33.519455] (-) TimerEvent: {}
+[33.619922] (-) TimerEvent: {}
+[33.720232] (-) TimerEvent: {}
+[33.820548] (-) TimerEvent: {}
+[33.920884] (-) TimerEvent: {}
+[34.021270] (-) TimerEvent: {}
+[34.121633] (-) TimerEvent: {}
+[34.222087] (-) TimerEvent: {}
+[34.322456] (-) TimerEvent: {}
+[34.422854] (-) TimerEvent: {}
+[34.523198] (-) TimerEvent: {}
+[34.623611] (-) TimerEvent: {}
+[34.724182] (-) TimerEvent: {}
+[34.824838] (-) TimerEvent: {}
+[34.925196] (-) TimerEvent: {}
+[35.025684] (-) TimerEvent: {}
+[35.126041] (-) TimerEvent: {}
+[35.226406] (-) TimerEvent: {}
+[35.326763] (-) TimerEvent: {}
+[35.427095] (-) TimerEvent: {}
+[35.527442] (-) TimerEvent: {}
+[35.627941] (-) TimerEvent: {}
+[35.728223] (-) TimerEvent: {}
+[35.828548] (-) TimerEvent: {}
+[35.928960] (-) TimerEvent: {}
+[36.029277] (-) TimerEvent: {}
+[36.129568] (-) TimerEvent: {}
+[36.229916] (-) TimerEvent: {}
+[36.330189] (-) TimerEvent: {}
+[36.430422] (-) TimerEvent: {}
+[36.530765] (-) TimerEvent: {}
+[36.631328] (-) TimerEvent: {}
+[36.731786] (-) TimerEvent: {}
+[36.832191] (-) TimerEvent: {}
+[36.932698] (-) TimerEvent: {}
+[37.033034] (-) TimerEvent: {}
+[37.133314] (-) TimerEvent: {}
+[37.233600] (-) TimerEvent: {}
+[37.333967] (-) TimerEvent: {}
+[37.434464] (-) TimerEvent: {}
+[37.535051] (-) TimerEvent: {}
+[37.635555] (-) TimerEvent: {}
+[37.735831] (-) TimerEvent: {}
+[37.836119] (-) TimerEvent: {}
+[37.936432] (-) TimerEvent: {}
+[38.036741] (-) TimerEvent: {}
+[38.137021] (-) TimerEvent: {}
+[38.237295] (-) TimerEvent: {}
+[38.337661] (-) TimerEvent: {}
+[38.437940] (-) TimerEvent: {}
+[38.538296] (-) TimerEvent: {}
+[38.638880] (-) TimerEvent: {}
+[38.739510] (-) TimerEvent: {}
+[38.839815] (-) TimerEvent: {}
+[38.940126] (-) TimerEvent: {}
+[39.040456] (-) TimerEvent: {}
+[39.140825] (-) TimerEvent: {}
+[39.241301] (-) TimerEvent: {}
+[39.341688] (-) TimerEvent: {}
+[39.442198] (-) TimerEvent: {}
+[39.542592] (-) TimerEvent: {}
+[39.643052] (-) TimerEvent: {}
+[39.743602] (-) TimerEvent: {}
+[39.844099] (-) TimerEvent: {}
+[39.944909] (-) TimerEvent: {}
+[40.045383] (-) TimerEvent: {}
+[40.146429] (-) TimerEvent: {}
+[40.247207] (-) TimerEvent: {}
+[40.347655] (-) TimerEvent: {}
+[40.448016] (-) TimerEvent: {}
+[40.548381] (-) TimerEvent: {}
+[40.648706] (-) TimerEvent: {}
+[40.749099] (-) TimerEvent: {}
+[40.849457] (-) TimerEvent: {}
+[40.949972] (-) TimerEvent: {}
+[41.050263] (-) TimerEvent: {}
+[41.148109] (point_lio) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX executable pointlio_mapping\x1b[0m\n'}
+[41.150370] (-) TimerEvent: {}
+[41.250598] (-) TimerEvent: {}
+[41.351014] (-) TimerEvent: {}
+[41.451355] (-) TimerEvent: {}
+[41.551804] (-) TimerEvent: {}
+[41.652333] (-) TimerEvent: {}
+[41.752862] (-) TimerEvent: {}
+[41.853227] (-) TimerEvent: {}
+[41.953573] (-) TimerEvent: {}
+[42.053889] (-) TimerEvent: {}
+[42.062834] (point_lio) StdoutLine: {'line': b'[100%] Built target pointlio_mapping\n'}
+[42.075166] (point_lio) JobEnded: {'identifier': 'point_lio', 'rc': 'SIGINT'}
+[42.085614] (-) EventReactorShutdown: {}

@@ -1,0 +1,192 @@
+[0.018s] Invoking command in '/home/nyu/nav_ws/build/ros2_livox_simulation': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_simulation/livox_laser_simulation_RO2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/ros2_livox_simulation
+[0.066s] -- The C compiler identification is GNU 11.4.0
+[0.121s] -- The CXX compiler identification is GNU 11.4.0
+[0.126s] -- Detecting C compiler ABI info
+[0.183s] -- Detecting C compiler ABI info - done
+[0.190s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.190s] -- Detecting C compile features
+[0.191s] -- Detecting C compile features - done
+[0.195s] -- Detecting CXX compiler ABI info
+[0.260s] -- Detecting CXX compiler ABI info - done
+[0.267s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.267s] -- Detecting CXX compile features
+[0.267s] -- Detecting CXX compile features - done
+[0.269s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.407s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.460s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.502s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.557s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.565s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.577s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.593s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.615s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.676s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.680s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.774s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.799s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.838s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.846s] -- Looking for pthread.h
+[0.901s] -- Looking for pthread.h - found
+[0.902s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.977s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.978s] -- Found Threads: TRUE  
+[1.018s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[1.027s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.028s] -- Checking for module 'bullet>=2.82'
+[1.044s] --   Found bullet, version 3.05
+[1.166s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.233s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.259s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.299s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.326s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.335s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.347s] -- Searching for dependencies of ignition-math6
+[1.350s] -- Looking for OGRE...
+[1.350s] -- OGRE_PREFIX_WATCH changed.
+[1.358s] -- Checking for module 'OGRE'
+[1.381s] --   Found OGRE, version 1.9.0
+[1.427s] -- Found Ogre Ghadamon (1.9.0)
+[1.440s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.451s] -- Looking for OGRE_Paging...
+[1.470s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.470s] -- Looking for OGRE_Terrain...
+[1.486s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.486s] -- Looking for OGRE_Property...
+[1.504s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.504s] -- Looking for OGRE_RTShaderSystem...
+[1.520s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.520s] -- Looking for OGRE_Volume...
+[1.536s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.536s] -- Looking for OGRE_Overlay...
+[1.550s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.814s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.818s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.818s] -- Searching for dependencies of ignition-transport8
+[1.838s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.852s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.857s] -- Checking for module 'libzmq >= 4'
+[1.878s] --   Found libzmq , version 4.3.4
+[1.925s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.935s] -- Checking for module 'uuid'
+[1.958s] --   Found uuid, version 2.37.2
+[2.011s] -- Found UUID: TRUE  
+[2.015s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.016s] -- Searching for dependencies of ignition-msgs5
+[2.040s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.048s] -- Checking for module 'tinyxml2'
+[2.072s] --   Found tinyxml2, version 9.0.0
+[2.137s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.141s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.142s] -- Searching for dependencies of ignition-common3
+[2.142s] -- Looking for dlfcn.h - found
+[2.144s] -- Looking for libdl - found
+[2.146s] -- Found DL: TRUE  
+[2.165s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.166s] -- Searching for <ignition-common3> component [graphics]
+[2.170s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.170s] -- Searching for dependencies of ignition-common3-graphics
+[2.171s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.177s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.177s] -- Searching for dependencies of ignition-fuel_tools4
+[2.311s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.323s] -- Checking for module 'jsoncpp'
+[2.340s] --   Found jsoncpp, version 1.9.5
+[2.391s] -- Found JSONCPP: TRUE  
+[2.402s] -- Checking for module 'libzip'
+[2.424s] --   Found libzip, version 1.7.3
+[2.478s] -- Found ZIP: TRUE  
+[2.478s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.479s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.479s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.485s] -- Gazebo version: 11.10
+[2.486s] -- Checking for module 'tbb'
+[2.507s] --   Found tbb, version 2021.5.0
+[2.558s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.566s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.609s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.744s] -- Found livox_ros_driver2: 1.0.0 (/home/nyu/nav_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[2.802s] -- Checking for module 'eigen3'
+[2.818s] --   Found eigen3, version 3.4.0
+[2.856s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.856s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.887s] -- Checking for module 'flann'
+[2.901s] --   Found flann, version 1.9.1
+[2.936s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.936s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.831s] -- Checking for module 'libusb-1.0'
+[3.846s] --   Found libusb-1.0, version 1.0.25
+[3.885s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[3.886s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.947s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.127s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.134s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.142s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.338s] -- Found Qhull version 8.0.2
+[4.552s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.795s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[4.796s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[4.798s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[4.799s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[4.800s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[4.801s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[4.801s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[4.802s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[4.803s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[4.804s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[4.806s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[4.807s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[4.808s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[4.809s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[4.811s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[4.812s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[4.813s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[4.814s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[4.816s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[4.817s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[4.818s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[4.819s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[4.819s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[4.821s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[4.823s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[4.847s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono 
+[4.964s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/ros2_livox_simulation` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[4.973s] -- Configuring done
+[5.025s] -- Generating done
+[5.037s] -- Build files have been written to: /home/nyu/nav_ws/build/ros2_livox_simulation
+[5.094s] Invoked command in '/home/nyu/nav_ws/build/ros2_livox_simulation' returned '0': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_simulation/livox_laser_simulation_RO2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/ros2_livox_simulation
+[5.096s] Invoking command in '/home/nyu/nav_ws/build/ros2_livox_simulation': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/nyu/nav_ws/build/ros2_livox_simulation -- -j16 -l16
+[5.180s] [ 33%] [32mBuilding CXX object CMakeFiles/ros2_livox.dir/src/livox_ode_multiray_shape.cpp.o[0m
+[5.183s] [ 66%] [32mBuilding CXX object CMakeFiles/ros2_livox.dir/src/livox_points_plugin.cpp.o[0m
+[23.918s] [100%] [32m[1mLinking CXX shared library libros2_livox.so[0m
+[24.983s] [100%] Built target ros2_livox
+[24.996s] Invoked command in '/home/nyu/nav_ws/build/ros2_livox_simulation' returned '0': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/nyu/nav_ws/build/ros2_livox_simulation -- -j16 -l16
+[24.998s] Invoking command in '/home/nyu/nav_ws/build/ros2_livox_simulation': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --install /home/nyu/nav_ws/build/ros2_livox_simulation
+[25.006s] -- Install configuration: ""
+[25.007s] -- Execute custom install script
+[25.007s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox/csv_reader.hpp
+[25.017s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox/livox_ode_multiray_shape.h
+[25.026s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox/livox_points_plugin.h
+[25.036s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/library_path.sh
+[25.046s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/library_path.dsv
+[25.056s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/lib/libros2_livox.so
+[25.067s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/scan_mode/mid360.csv
+[25.077s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/urdf/mid360.xacro
+[25.087s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ament_index/resource_index/package_run_dependencies/ros2_livox_simulation
+[25.098s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ament_index/resource_index/parent_prefix_path/ros2_livox_simulation
+[25.107s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/ament_prefix_path.sh
+[25.117s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/ament_prefix_path.dsv
+[25.126s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/path.sh
+[25.137s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/path.dsv
+[25.147s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.bash
+[25.156s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.sh
+[25.166s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.zsh
+[25.176s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.dsv
+[25.185s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/package.dsv
+[25.195s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ament_index/resource_index/packages/ros2_livox_simulation
+[25.205s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.214s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.223s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_libraries-extras.cmake
+[25.233s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ros2_livox_simulationConfig.cmake
+[25.242s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ros2_livox_simulationConfig-version.cmake
+[25.252s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/package.xml
+[25.263s] Invoked command in '/home/nyu/nav_ws/build/ros2_livox_simulation' returned '0': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --install /home/nyu/nav_ws/build/ros2_livox_simulation

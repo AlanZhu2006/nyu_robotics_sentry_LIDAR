@@ -1,0 +1,44 @@
+[0.545s] Invoking command in '/home/nyu/nav_ws/src/map2gazebo': PYTHONPATH=/home/nyu/nav_ws/src/build/map2gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/map2gazebo build --build-base /home/nyu/nav_ws/src/build/map2gazebo/build install --record /home/nyu/nav_ws/src/build/map2gazebo/install.log --install-scripts $base/lib/map2gazebo --single-version-externally-managed install_data
+[0.724s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.724s]   warnings.warn(
+[0.730s] running egg_info
+[0.731s] creating ../build/map2gazebo/map2gazebo.egg-info
+[0.731s] writing ../build/map2gazebo/map2gazebo.egg-info/PKG-INFO
+[0.731s] writing dependency_links to ../build/map2gazebo/map2gazebo.egg-info/dependency_links.txt
+[0.731s] writing entry points to ../build/map2gazebo/map2gazebo.egg-info/entry_points.txt
+[0.731s] writing requirements to ../build/map2gazebo/map2gazebo.egg-info/requires.txt
+[0.731s] writing top-level names to ../build/map2gazebo/map2gazebo.egg-info/top_level.txt
+[0.731s] writing manifest file '../build/map2gazebo/map2gazebo.egg-info/SOURCES.txt'
+[0.733s] reading manifest file '../build/map2gazebo/map2gazebo.egg-info/SOURCES.txt'
+[0.734s] writing manifest file '../build/map2gazebo/map2gazebo.egg-info/SOURCES.txt'
+[0.734s] running build
+[0.734s] running build_py
+[0.734s] creating /home/nyu/nav_ws/src/build/map2gazebo/build
+[0.734s] creating /home/nyu/nav_ws/src/build/map2gazebo/build/lib
+[0.734s] creating /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo
+[0.734s] copying map2gazebo/map2gazebo.py -> /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo
+[0.734s] copying map2gazebo/__init__.py -> /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo
+[0.734s] copying map2gazebo/map2gazebo_offline.py -> /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo
+[0.734s] running install
+[0.735s] running install_lib
+[0.735s] creating /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo
+[0.735s] copying /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo/map2gazebo.py -> /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo
+[0.735s] copying /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo/__init__.py -> /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo
+[0.735s] copying /home/nyu/nav_ws/src/build/map2gazebo/build/lib/map2gazebo/map2gazebo_offline.py -> /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo
+[0.735s] byte-compiling /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo/map2gazebo.py to map2gazebo.cpython-310.pyc
+[0.736s] byte-compiling /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo/__init__.py to __init__.cpython-310.pyc
+[0.736s] byte-compiling /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo/map2gazebo_offline.py to map2gazebo_offline.cpython-310.pyc
+[0.737s] running install_data
+[0.737s] creating /home/nyu/nav_ws/src/install/map2gazebo/share/ament_index
+[0.737s] creating /home/nyu/nav_ws/src/install/map2gazebo/share/ament_index/resource_index
+[0.737s] creating /home/nyu/nav_ws/src/install/map2gazebo/share/ament_index/resource_index/packages
+[0.737s] copying resource/map2gazebo -> /home/nyu/nav_ws/src/install/map2gazebo/share/ament_index/resource_index/packages
+[0.737s] copying package.xml -> /home/nyu/nav_ws/src/install/map2gazebo/share/map2gazebo
+[0.738s] copying launch/map2gazebo.launch.py -> /home/nyu/nav_ws/src/install/map2gazebo/share/map2gazebo
+[0.738s] copying config/default.yaml -> /home/nyu/nav_ws/src/install/map2gazebo/share/map2gazebo
+[0.738s] running install_egg_info
+[0.739s] Copying ../build/map2gazebo/map2gazebo.egg-info to /home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages/map2gazebo-0.0.0-py3.10.egg-info
+[0.739s] running install_scripts
+[0.761s] Installing map2gazebo script to /home/nyu/nav_ws/src/install/map2gazebo/lib/map2gazebo
+[0.761s] writing list of installed files to '/home/nyu/nav_ws/src/build/map2gazebo/install.log'
+[0.784s] Invoked command in '/home/nyu/nav_ws/src/map2gazebo' returned '0': PYTHONPATH=/home/nyu/nav_ws/src/build/map2gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nyu/nav_ws/src/install/map2gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/map2gazebo build --build-base /home/nyu/nav_ws/src/build/map2gazebo/build install --record /home/nyu/nav_ws/src/build/map2gazebo/install.log --install-scripts $base/lib/map2gazebo --single-version-externally-managed install_data

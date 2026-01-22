@@ -1,0 +1,6 @@
+Invoking command in '/home/nyu/nav_ws/build/pb_rm_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_simulation/pb_rm_simulation -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/pb_rm_simulation
+Invoked command in '/home/nyu/nav_ws/build/pb_rm_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_simulation/pb_rm_simulation -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/pb_rm_simulation
+Invoking command in '/home/nyu/nav_ws/build/pb_rm_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/pb_rm_simulation -- -j16 -l16
+Invoked command in '/home/nyu/nav_ws/build/pb_rm_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/pb_rm_simulation -- -j16 -l16
+Invoking command in '/home/nyu/nav_ws/build/pb_rm_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/pb_rm_simulation
+Invoked command in '/home/nyu/nav_ws/build/pb_rm_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/pb_rm_simulation

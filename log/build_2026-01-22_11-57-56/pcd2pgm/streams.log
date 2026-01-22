@@ -1,0 +1,37 @@
+[0.192s] Invoking command in '/home/nyu/nav_ws/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/pcd2pgm -- -j16 -l16
+[0.264s] [ 50%] Built target pcd2pgm_node
+[0.274s] [100%] Built target pcd2pgm
+[0.341s] Invoked command in '/home/nyu/nav_ws/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/pcd2pgm -- -j16 -l16
+[0.341s] Invoking command in '/home/nyu/nav_ws/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/pcd2pgm
+[0.363s] -- Install configuration: ""
+[0.363s] -- Execute custom install script
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/lib/pcd2pgm/pcd2pgm_node
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/include/pcd2pgm/pcd2pgm/pcd2pgm.hpp
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/environment/library_path.sh
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/environment/library_path.dsv
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/lib/libpcd2pgm.so
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/config/pcd2pgm.yaml
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/config/pcd2pgm.yaml.backup
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/config/pcd2pgm.yaml.backup_before_angle_adjust
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/launch/pcd2pgm_launch.py
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/rviz/pcd2pgm.rviz
+[0.363s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/ament_index/resource_index/package_run_dependencies/pcd2pgm
+[0.364s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/ament_index/resource_index/parent_prefix_path/pcd2pgm
+[0.364s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/environment/ament_prefix_path.sh
+[0.364s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/environment/ament_prefix_path.dsv
+[0.364s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/environment/path.sh
+[0.364s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/environment/path.dsv
+[0.364s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/local_setup.bash
+[0.364s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/local_setup.sh
+[0.365s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/local_setup.zsh
+[0.365s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/local_setup.dsv
+[0.365s] -- Symlinking: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/package.dsv
+[0.366s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/ament_index/resource_index/packages/pcd2pgm
+[0.367s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/ament_index/resource_index/rclcpp_components/pcd2pgm
+[0.367s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.367s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.367s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/cmake/ament_cmake_export_libraries-extras.cmake
+[0.367s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/cmake/pcd2pgmConfig.cmake
+[0.367s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/cmake/pcd2pgmConfig-version.cmake
+[0.367s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pcd2pgm/share/pcd2pgm/package.xml
+[0.369s] Invoked command in '/home/nyu/nav_ws/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/pcd2pgm

@@ -1,0 +1,126 @@
+[0.021s] Invoking command in '/home/nyu/nav_ws/build/icp_registration': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_localization/icp_registration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/icp_registration
+[0.085s] -- The C compiler identification is GNU 11.4.0
+[0.126s] -- The CXX compiler identification is GNU 11.4.0
+[0.132s] -- Detecting C compiler ABI info
+[0.196s] -- Detecting C compiler ABI info - done
+[0.205s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.205s] -- Detecting C compile features
+[0.205s] -- Detecting C compile features - done
+[0.209s] -- Detecting CXX compiler ABI info
+[0.273s] -- Detecting CXX compiler ABI info - done
+[0.278s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.279s] -- Detecting CXX compile features
+[0.279s] -- Detecting CXX compile features - done
+[0.281s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.457s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.532s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.568s] -- Checking for module 'eigen3'
+[0.579s] --   Found eigen3, version 3.4.0
+[0.602s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.602s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.629s] -- Checking for module 'flann'
+[0.640s] --   Found flann, version 1.9.1
+[0.679s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.679s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.912s] -- Checking for module 'libusb-1.0'
+[1.932s] --   Found libusb-1.0, version 1.0.25
+[1.993s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.994s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.086s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.321s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.327s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.334s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.537s] -- Found Qhull version 8.0.2
+[2.747s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.926s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.927s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.928s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.929s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.930s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.931s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.931s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.932s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.933s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.934s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.935s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.936s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.937s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.938s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.939s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.940s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.942s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.943s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.944s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.945s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.946s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.946s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.947s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.948s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.949s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.084s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.092s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.103s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.119s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.140s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.199s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.203s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.310s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.334s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.383s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.396s] -- Found Threads: TRUE  
+[3.661s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.662s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.662s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.723s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.745s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/icp_registration` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[3.752s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.752s] -- Configured cppcheck include dirs: /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_localization/icp_registration/include
+[3.753s] -- Configured cppcheck exclude dirs and/or files: 
+[3.753s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.754s] -- Added test 'lint_cmake' to check CMake code style
+[3.755s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.756s] -- Added test 'uncrustify' to check C / C++ code style
+[3.756s] -- Configured uncrustify additional arguments: 
+[3.756s] -- Added test 'xmllint' to check XML markup files
+[3.760s] -- Configuring done
+[3.801s] -- Generating done
+[3.814s] -- Build files have been written to: /home/nyu/nav_ws/build/icp_registration
+[3.836s] Invoked command in '/home/nyu/nav_ws/build/icp_registration' returned '0': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_localization/icp_registration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/icp_registration
+[3.838s] Invoking command in '/home/nyu/nav_ws/build/icp_registration': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/nyu/nav_ws/build/icp_registration -- -j16 -l16
+[3.884s] [ 25%] [32mBuilding CXX object CMakeFiles/icp_registration.dir/src/icp_registration.cpp.o[0m
+[3.884s] [ 50%] [32mBuilding CXX object CMakeFiles/icp_registration_node.dir/rclcpp_components/node_main_icp_registration_node.cpp.o[0m
+[8.855s] [ 75%] [32m[1mLinking CXX executable icp_registration_node[0m
+[9.152s] [ 75%] Built target icp_registration_node
+[36.673s] [100%] [32m[1mLinking CXX shared library libicp_registration.so[0m
+[39.167s] [100%] Built target icp_registration
+[39.177s] Invoked command in '/home/nyu/nav_ws/build/icp_registration' returned '0': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/nyu/nav_ws/build/icp_registration -- -j16 -l16
+[39.178s] Invoking command in '/home/nyu/nav_ws/build/icp_registration': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --install /home/nyu/nav_ws/build/icp_registration
+[39.186s] -- Install configuration: ""
+[39.186s] -- Execute custom install script
+[39.187s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/lib/icp_registration/icp_registration_node
+[39.195s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/include/icp_registration/icp_registration.hpp
+[39.203s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/library_path.sh
+[39.210s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/library_path.dsv
+[39.217s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/lib/libicp_registration.so
+[39.225s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/launch/icp.launch.py
+[39.232s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/config/icp.yaml
+[39.241s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/ament_index/resource_index/package_run_dependencies/icp_registration
+[39.248s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/ament_index/resource_index/parent_prefix_path/icp_registration
+[39.256s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/ament_prefix_path.sh
+[39.264s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/ament_prefix_path.dsv
+[39.271s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/path.sh
+[39.279s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/path.dsv
+[39.287s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/local_setup.bash
+[39.294s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/local_setup.sh
+[39.302s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/local_setup.zsh
+[39.310s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/local_setup.dsv
+[39.318s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/package.dsv
+[39.326s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/ament_index/resource_index/packages/icp_registration
+[39.332s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/ament_index/resource_index/rclcpp_components/icp_registration
+[39.340s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/ament_cmake_export_dependencies-extras.cmake
+[39.346s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/ament_cmake_export_include_directories-extras.cmake
+[39.354s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/ament_cmake_export_libraries-extras.cmake
+[39.362s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/icp_registrationConfig.cmake
+[39.368s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/icp_registrationConfig-version.cmake
+[39.376s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/package.xml
+[39.384s] Invoked command in '/home/nyu/nav_ws/build/icp_registration' returned '0': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --install /home/nyu/nav_ws/build/icp_registration

@@ -1,0 +1,76 @@
+[0.182s] Invoking command in '/home/nyu/nav_ws/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_perception/pointcloud_to_laserscan -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/pointcloud_to_laserscan
+[0.198s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.318s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.423s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.427s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.433s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.444s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.454s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.480s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.481s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.580s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.717s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.720s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/pointcloud_to_laserscan` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[0.723s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.723s] -- Configured cppcheck include dirs: /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_perception/pointcloud_to_laserscan/include
+[0.723s] -- Configured cppcheck exclude dirs and/or files: 
+[0.724s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.724s] -- Configured cpplint exclude dirs and/or files: 
+[0.724s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.724s] -- Added test 'lint_cmake' to check CMake code style
+[0.724s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.725s] -- Added test 'uncrustify' to check C / C++ code style
+[0.725s] -- Configured uncrustify additional arguments: 
+[0.725s] -- Added test 'xmllint' to check XML markup files
+[0.726s] -- Configuring done
+[0.748s] -- Generating done
+[0.755s] -- Build files have been written to: /home/nyu/nav_ws/build/pointcloud_to_laserscan
+[0.762s] Invoked command in '/home/nyu/nav_ws/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_perception/pointcloud_to_laserscan -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/pointcloud_to_laserscan
+[0.763s] Invoking command in '/home/nyu/nav_ws/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/pointcloud_to_laserscan -- -j16 -l16
+[0.794s] [35m[1mConsolidate compiler generated dependencies of target laserscan_to_pointcloud_node[0m
+[0.796s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_to_laserscan_node[0m
+[0.796s] [35m[1mConsolidate compiler generated dependencies of target laserscan_to_pointcloud[0m
+[0.808s] [ 20%] Built target laserscan_to_pointcloud_node
+[0.810s] [ 40%] Built target pointcloud_to_laserscan_node
+[0.816s] [ 60%] Built target laserscan_to_pointcloud
+[0.826s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_to_laserscan[0m
+[0.841s] [ 80%] Built target pointcloud_to_laserscan
+[0.850s] [35m[1mConsolidate compiler generated dependencies of target dummy_pointcloud_publisher[0m
+[0.865s] [100%] Built target dummy_pointcloud_publisher
+[0.875s] Invoked command in '/home/nyu/nav_ws/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/pointcloud_to_laserscan -- -j16 -l16
+[0.877s] Invoking command in '/home/nyu/nav_ws/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/pointcloud_to_laserscan
+[0.884s] -- Install configuration: ""
+[0.884s] -- Execute custom install script
+[0.884s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/laserscan_to_pointcloud_node
+[0.884s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/pointcloud_to_laserscan_node
+[0.884s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/laserscan_to_pointcloud_node.hpp
+[0.884s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/pointcloud_to_laserscan_node.hpp
+[0.884s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/include/pointcloud_to_laserscan/visibility_control.h
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/library_path.sh
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/library_path.dsv
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/lib/liblaserscan_to_pointcloud.so
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/lib/libpointcloud_to_laserscan.so
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/lib/pointcloud_to_laserscan/dummy_pointcloud_publisher
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/pointcloud_to_laserscan_launch.py
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/sample_laserscan_to_pointcloud_launch.py
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/launch/sample_pointcloud_to_laserscan_launch.py
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/ament_index/resource_index/package_run_dependencies/pointcloud_to_laserscan
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/ament_index/resource_index/parent_prefix_path/pointcloud_to_laserscan
+[0.885s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/ament_prefix_path.sh
+[0.886s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/ament_prefix_path.dsv
+[0.886s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/path.sh
+[0.886s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/environment/path.dsv
+[0.886s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.bash
+[0.886s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.sh
+[0.886s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.zsh
+[0.886s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/local_setup.dsv
+[0.886s] -- Symlinking: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.dsv
+[0.892s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/ament_index/resource_index/packages/pointcloud_to_laserscan
+[0.892s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/ament_index/resource_index/rclcpp_components/pointcloud_to_laserscan
+[0.892s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.892s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.892s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/ament_cmake_export_libraries-extras.cmake
+[0.892s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/pointcloud_to_laserscanConfig.cmake
+[0.892s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/cmake/pointcloud_to_laserscanConfig-version.cmake
+[0.893s] -- Up-to-date symlink: /home/nyu/nav_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.xml
+[0.894s] Invoked command in '/home/nyu/nav_ws/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/pointcloud_to_laserscan

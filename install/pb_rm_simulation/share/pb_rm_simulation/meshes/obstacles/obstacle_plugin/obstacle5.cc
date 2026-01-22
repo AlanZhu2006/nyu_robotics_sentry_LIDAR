@@ -1,0 +1,1 @@
+/home/nyu/nav_ws/src/pb_rm_simulation/src/rm_simulation/pb_rm_simulation/meshes/obstacles/obstacle_plugin/obstacle5.cc

@@ -1,0 +1,33 @@
+[0.019s] Invoking command in '/home/nyu/nav_ws/build/ros2_livox_simulation': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nyu/nav_ws/build/ros2_livox_simulation -- -j16 -l16
+[0.090s] [100%] Built target ros2_livox
+[0.098s] Invoked command in '/home/nyu/nav_ws/build/ros2_livox_simulation' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nyu/nav_ws/build/ros2_livox_simulation -- -j16 -l16
+[0.100s] Invoking command in '/home/nyu/nav_ws/build/ros2_livox_simulation': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nyu/nav_ws/build/ros2_livox_simulation
+[0.104s] -- Install configuration: ""
+[0.105s] -- Execute custom install script
+[0.105s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox/csv_reader.hpp
+[0.105s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox/livox_ode_multiray_shape.h
+[0.105s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox/livox_points_plugin.h
+[0.105s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/library_path.sh
+[0.105s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/library_path.dsv
+[0.105s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/lib/libros2_livox.so
+[0.105s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/scan_mode/mid360.csv
+[0.105s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/urdf/mid360.xacro
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ament_index/resource_index/package_run_dependencies/ros2_livox_simulation
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ament_index/resource_index/parent_prefix_path/ros2_livox_simulation
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/ament_prefix_path.sh
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/ament_prefix_path.dsv
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/path.sh
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/path.dsv
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.bash
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.sh
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.zsh
+[0.106s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.dsv
+[0.106s] -- Symlinking: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/package.dsv
+[0.112s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ament_index/resource_index/packages/ros2_livox_simulation
+[0.112s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.112s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.112s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_libraries-extras.cmake
+[0.113s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ros2_livox_simulationConfig.cmake
+[0.113s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ros2_livox_simulationConfig-version.cmake
+[0.113s] -- Up-to-date symlink: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/package.xml
+[0.135s] Invoked command in '/home/nyu/nav_ws/build/ros2_livox_simulation' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nyu/nav_ws/build/ros2_livox_simulation

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c4e4bcff2375b06dfd9a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "fake_vel_transform",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "fake_vel_transform::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fake_vel_transform-91f230f18d1135e71ab7.json",
+					"name" : "fake_vel_transform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fake_vel_transform_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fake_vel_transform_node-ddbbee3d056660cc7126.json",
+					"name" : "fake_vel_transform_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fake_vel_transform_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fake_vel_transform_uninstall-67ed854bb3bb1991d5a1.json",
+					"name" : "fake_vel_transform_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-60676cc1e329f57f5e3a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nyu/nav_ws/build/fake_vel_transform",
+		"source" : "/home/nyu/nav_ws/src/pb_rm_simulation/src/rm_navigation/fake_vel_transform"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

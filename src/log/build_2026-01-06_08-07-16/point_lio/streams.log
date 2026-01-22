@@ -1,0 +1,5 @@
+[0.213s] Invoking command in '/home/nyu/nav_ws/src/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/src/build/point_lio -- -j16 -l16
+[0.276s] [35m[1mConsolidate compiler generated dependencies of target pointlio_mapping[0m
+[0.314s] [ 16%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[41.137s] [ 33%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[42.051s] [100%] Built target pointlio_mapping

@@ -1,0 +1,73 @@
+[0.015s] Invoking command in '/home/nyu/nav_ws/build/icp_registration': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_localization/icp_registration -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/icp_registration
+[0.023s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.115s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.131s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.158s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.384s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.389s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.526s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.532s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.537s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.660s] -- Found Qhull version 8.0.2
+[0.768s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.938s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.939s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.943s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.949s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.957s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.977s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.978s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.056s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.180s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.181s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.210s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.213s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/icp_registration` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[1.217s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.217s] -- Configured cppcheck include dirs: /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_localization/icp_registration/include
+[1.217s] -- Configured cppcheck exclude dirs and/or files: 
+[1.217s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.217s] -- Added test 'lint_cmake' to check CMake code style
+[1.218s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.218s] -- Added test 'uncrustify' to check C / C++ code style
+[1.218s] -- Configured uncrustify additional arguments: 
+[1.218s] -- Added test 'xmllint' to check XML markup files
+[1.220s] -- Configuring done
+[1.244s] -- Generating done
+[1.251s] -- Build files have been written to: /home/nyu/nav_ws/build/icp_registration
+[1.264s] Invoked command in '/home/nyu/nav_ws/build/icp_registration' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_localization/icp_registration -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/icp_registration
+[1.266s] Invoking command in '/home/nyu/nav_ws/build/icp_registration': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nyu/nav_ws/build/icp_registration -- -j16 -l16
+[1.304s] [35m[1mConsolidate compiler generated dependencies of target icp_registration_node[0m
+[1.304s] [35m[1mConsolidate compiler generated dependencies of target icp_registration[0m
+[1.317s] [ 50%] Built target icp_registration_node
+[1.323s] [100%] Built target icp_registration
+[1.332s] Invoked command in '/home/nyu/nav_ws/build/icp_registration' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nyu/nav_ws/build/icp_registration -- -j16 -l16
+[1.334s] Invoking command in '/home/nyu/nav_ws/build/icp_registration': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nyu/nav_ws/build/icp_registration
+[1.340s] -- Install configuration: ""
+[1.340s] -- Execute custom install script
+[1.340s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/lib/icp_registration/icp_registration_node
+[1.340s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/include/icp_registration/icp_registration.hpp
+[1.340s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/library_path.sh
+[1.340s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/library_path.dsv
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/lib/libicp_registration.so
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/launch/icp.launch.py
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/config/icp.yaml
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/ament_index/resource_index/package_run_dependencies/icp_registration
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/ament_index/resource_index/parent_prefix_path/icp_registration
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/ament_prefix_path.sh
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/ament_prefix_path.dsv
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/path.sh
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/environment/path.dsv
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/local_setup.bash
+[1.341s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/local_setup.sh
+[1.342s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/local_setup.zsh
+[1.342s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/local_setup.dsv
+[1.342s] -- Symlinking: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/package.dsv
+[1.349s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/ament_index/resource_index/packages/icp_registration
+[1.349s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/ament_index/resource_index/rclcpp_components/icp_registration
+[1.350s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.350s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.350s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/ament_cmake_export_libraries-extras.cmake
+[1.350s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/icp_registrationConfig.cmake
+[1.350s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/cmake/icp_registrationConfig-version.cmake
+[1.350s] -- Up-to-date symlink: /home/nyu/nav_ws/install/icp_registration/share/icp_registration/package.xml
+[1.352s] Invoked command in '/home/nyu/nav_ws/build/icp_registration' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nyu/nav_ws/build/icp_registration

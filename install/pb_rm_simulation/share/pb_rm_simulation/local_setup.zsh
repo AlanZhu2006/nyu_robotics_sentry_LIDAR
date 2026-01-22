@@ -1,0 +1,1 @@
+/home/nyu/nav_ws/build/pb_rm_simulation/ament_cmake_environment_hooks/local_setup.zsh

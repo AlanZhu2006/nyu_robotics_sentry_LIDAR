@@ -1,0 +1,43 @@
+[0.212s] Invoking command in '/home/nyu/nav_ws/src/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/src/build/pcd2pgm -- -j16 -l16
+[0.261s] [35m[1mConsolidate compiler generated dependencies of target pcd2pgm[0m
+[0.262s] [35m[1mConsolidate compiler generated dependencies of target pcd2pgm_node[0m
+[0.284s] [ 50%] Built target pcd2pgm_node
+[0.292s] [100%] Built target pcd2pgm
+[0.316s] Invoked command in '/home/nyu/nav_ws/src/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/src/build/pcd2pgm -- -j16 -l16
+[0.324s] Invoking command in '/home/nyu/nav_ws/src/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/src/build/pcd2pgm
+[0.334s] -- Install configuration: ""
+[0.334s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/lib/pcd2pgm/pcd2pgm_node
+[0.335s] -- Set runtime path of "/home/nyu/nav_ws/src/install/pcd2pgm/lib/pcd2pgm/pcd2pgm_node" to ""
+[0.335s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/include/pcd2pgm
+[0.335s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/include/pcd2pgm/pcd2pgm
+[0.335s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/include/pcd2pgm/pcd2pgm/pcd2pgm.hpp
+[0.335s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/library_path.sh
+[0.336s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/library_path.dsv
+[0.336s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/lib/libpcd2pgm.so
+[0.340s] -- Set runtime path of "/home/nyu/nav_ws/src/install/pcd2pgm/lib/libpcd2pgm.so" to ""
+[0.340s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/config
+[0.340s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/config/pcd2pgm.yaml
+[0.340s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/launch
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/launch/pcd2pgm_launch.py
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/rviz
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/rviz/pcd2pgm.rviz
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/ament_index/resource_index/package_run_dependencies/pcd2pgm
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/ament_index/resource_index/parent_prefix_path/pcd2pgm
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/ament_prefix_path.sh
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/ament_prefix_path.dsv
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/path.sh
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/environment/path.dsv
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/local_setup.bash
+[0.341s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/local_setup.sh
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/local_setup.zsh
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/local_setup.dsv
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/package.dsv
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/ament_index/resource_index/packages/pcd2pgm
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/ament_index/resource_index/rclcpp_components/pcd2pgm
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/ament_cmake_export_libraries-extras.cmake
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/pcd2pgmConfig.cmake
+[0.342s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/cmake/pcd2pgmConfig-version.cmake
+[0.343s] -- Installing: /home/nyu/nav_ws/src/install/pcd2pgm/share/pcd2pgm/package.xml
+[0.345s] Invoked command in '/home/nyu/nav_ws/src/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/src/build/pcd2pgm

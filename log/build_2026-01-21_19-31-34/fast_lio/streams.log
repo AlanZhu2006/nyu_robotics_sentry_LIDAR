@@ -1,0 +1,315 @@
+[0.023s] Invoking command in '/home/nyu/nav_ws/build/fast_lio': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/nyu/nav_ws/src/FAST_LIO -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/fast_lio
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.143s] -- The CXX compiler identification is GNU 11.4.0
+[0.151s] -- Detecting C compiler ABI info
+[0.212s] -- Detecting C compiler ABI info - done
+[0.222s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.222s] -- Detecting C compile features
+[0.222s] -- Detecting C compile features - done
+[0.226s] -- Detecting CXX compiler ABI info
+[0.300s] -- Detecting CXX compiler ABI info - done
+[0.305s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.305s] -- Detecting CXX compile features
+[0.306s] -- Detecting CXX compile features - done
+[0.306s] [0mCurrent CPU archtecture: x86_64[0m
+[0.310s] [0mProcesser number:  16[0m
+[0.310s] [0mcore for MP: 3[0m
+[0.614s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[0.617s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.747s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.825s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.861s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.912s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.920s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.931s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.947s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.970s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.032s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.036s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.138s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.164s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.201s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.210s] -- Looking for pthread.h
+[1.286s] -- Looking for pthread.h - found
+[1.286s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.375s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.377s] -- Found Threads: TRUE  
+[1.458s] -- Found rclcpp_components: 16.0.16 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.502s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.522s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.548s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.574s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.591s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.622s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.687s] -- Checking for module 'eigen3'
+[1.705s] --   Found eigen3, version 3.4.0
+[1.750s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.750s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.800s] -- Checking for module 'flann'
+[1.817s] --   Found flann, version 1.9.1
+[1.867s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.867s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.057s] -- Checking for module 'libusb-1.0'
+[3.072s] --   Found libusb-1.0, version 1.0.25
+[3.108s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[3.109s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.164s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.326s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.332s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.338s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.471s] -- Found Qhull version 8.0.2
+[3.607s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.766s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.767s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.768s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.769s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.770s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.771s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.771s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.772s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.773s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.774s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.775s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.776s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.777s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.778s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.779s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.781s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.782s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.782s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.783s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.784s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.785s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.786s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.786s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.787s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.788s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.824s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.826s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.826s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.913s] -- Found livox_ros_driver2: 1.0.0 (/home/nyu/nav_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[3.937s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.949s] [33mCMake Warning (dev) at CMakeLists.txt:81 (find_package):
+[3.950s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[3.950s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[3.950s]   command to set the policy and suppress this warning.
+[3.950s] 
+[3.950s]   CMake variable PCL_ROOT is set to:
+[3.950s] 
+[3.950s]     /usr
+[3.950s] 
+[3.950s]   For compatibility, CMake is ignoring the variable.
+[3.950s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.950s] [0m
+[3.957s] -- PCL: /usr/include/pcl-1.12
+[3.957s] [0mEigen:/usr/include/eigen3[0m
+[4.240s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.590s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.709s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.731s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.733s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.756s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.757s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.757s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.757s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.780s] -- Found PythonExtra: .so  
+[4.838s] -- Configuring done
+[4.900s] -- Generating done
+[4.916s] -- Build files have been written to: /home/nyu/nav_ws/build/fast_lio
+[4.955s] Invoked command in '/home/nyu/nav_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake /home/nyu/nav_ws/src/FAST_LIO -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/fast_lio
+[4.957s] Invoking command in '/home/nyu/nav_ws/build/fast_lio': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/nyu/nav_ws/build/fast_lio -- -j16 -l16
+[5.007s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.018s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.032s] [  5%] Built target ament_cmake_python_symlink_fast_lio
+[5.359s] running egg_info
+[5.359s] creating fast_lio.egg-info
+[5.359s] writing fast_lio.egg-info/PKG-INFO
+[5.360s] writing dependency_links to fast_lio.egg-info/dependency_links.txt
+[5.360s] writing top-level names to fast_lio.egg-info/top_level.txt
+[5.360s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[5.365s] reading manifest file 'fast_lio.egg-info/SOURCES.txt'
+[5.366s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[5.438s] [  5%] Built target ament_cmake_python_build_fast_lio_egg
+[5.451s] [  5%] Built target fast_lio__cpp
+[5.471s] [  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.475s] [ 11%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.478s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.504s] [ 17%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o[0m
+[5.645s] [ 20%] [32m[1mLinking C shared library libfast_lio__rosidl_generator_c.so[0m
+[5.706s] [ 20%] Built target fast_lio__rosidl_generator_c
+[5.737s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.738s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.738s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.949s] [ 31%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o[0m
+[5.953s] [ 34%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[6.116s] [ 37%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o[0m
+[6.210s] [ 40%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[6.285s] [ 42%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so[0m
+[6.322s] [ 45%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o[0m
+[6.363s] [ 48%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so[0m
+[6.388s] [ 48%] Built target fast_lio__rosidl_typesupport_c
+[6.454s] [ 51%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o[0m
+[6.455s] [ 51%] Built target fast_lio__rosidl_typesupport_cpp
+[6.522s] [ 54%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o[0m
+[6.525s] [ 57%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[6.533s] [ 60%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o[0m
+[6.563s] [ 62%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so[0m
+[6.657s] [ 65%] [32m[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so[0m
+[6.697s] [ 65%] Built target fast_lio__rosidl_typesupport_introspection_cpp
+[6.741s] [ 65%] Built target fast_lio__rosidl_typesupport_introspection_c
+[6.763s] [ 68%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.885s] [ 71%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so[0m
+[6.944s] [ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp
+[7.053s] [ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_c
+[7.085s] [ 71%] Built target fast_lio
+[7.122s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.770s] [ 74%] Built target fast_lio__py
+[7.803s] [ 77%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o[0m
+[7.995s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so[0m
+[8.065s] [ 80%] Built target fast_lio__rosidl_generator_py
+[8.115s] [ 82%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.116s] [ 85%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[8.118s] [ 88%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o[0m
+[8.281s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.329s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.380s] [ 94%] Built target fast_lio__rosidl_typesupport_c__pyext
+[8.388s] [ 94%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext
+[8.455s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.524s] [ 97%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[16.283s] In file included from [01m[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/date_time/microsec_time_clock.hpp:18[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36[m[K,
+[16.284s]                  from [01m[K/usr/include/boost/interprocess/sync/file_lock.hpp:26[m[K,
+[16.284s]                  from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46[m[K,
+[16.284s]                  from [01m[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73[m[K,
+[16.284s]                  from [01m[K/home/nyu/nav_ws/src/FAST_LIO/src/IMU_Processing.hpp:18[m[K,
+[16.284s]                  from [01m[K/home/nyu/nav_ws/src/FAST_LIO/src/laserMapping.cpp:47[m[K:
+[16.284s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[16.284s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[16.284s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[60.417s] [100%] [32m[1mLinking CXX executable fastlio_mapping[0m
+[61.105s] [100%] Built target fastlio_mapping
+[61.116s] Invoked command in '/home/nyu/nav_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --build /home/nyu/nav_ws/build/fast_lio -- -j16 -l16
+[61.117s] Invoking command in '/home/nyu/nav_ws/build/fast_lio': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --install /home/nyu/nav_ws/build/fast_lio
+[61.123s] -- Install configuration: "Release"
+[61.123s] -- Execute custom install script
+[61.123s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio
+[61.132s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h
+[61.139s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h
+[61.147s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h
+[61.154s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h
+[61.162s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h
+[61.169s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/environment/library_path.sh
+[61.175s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/environment/library_path.dsv
+[61.181s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
+[61.187s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[61.194s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp
+[61.200s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp
+[61.205s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp
+[61.213s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp
+[61.220s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp
+[61.229s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp
+[61.235s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp
+[61.240s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[61.248s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h
+[61.254s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[61.262s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp
+[61.268s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/environment/pythonpath.sh
+[61.276s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/environment/pythonpath.dsv
+[61.282s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO
+[61.289s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt
+[61.296s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt
+[61.302s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt
+[61.312s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py
+[61.318s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c
+[61.327s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c
+[61.332s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c
+[61.340s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[61.346s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[61.354s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[61.360s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so
+[61.367s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py
+[61.374s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py
+[61.383s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c
+[61.390s] -- Up-to-date symlink: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[61.390s] -- Up-to-date symlink: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[61.390s] -- Up-to-date symlink: /home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[61.391s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/msg/Pose6D.idl
+[61.398s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/msg/Pose6D.msg
+[61.407s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/lib/fast_lio/fastlio_mapping
+[61.415s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/config/avia.yaml
+[61.423s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/config/horizon.yaml
+[61.431s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/config/mid360.yaml
+[61.438s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/config/ouster64.yaml
+[61.446s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/config/velodyne.yaml
+[61.454s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch
+[61.462s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/launch/mapping.launch.py
+[61.470s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/rviz/fastlio.rviz
+[61.477s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio
+[61.483s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio
+[61.489s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh
+[61.497s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv
+[61.505s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/environment/path.sh
+[61.511s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/environment/path.dsv
+[61.518s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/local_setup.bash
+[61.524s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/local_setup.sh
+[61.531s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/local_setup.zsh
+[61.538s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/local_setup.dsv
+[61.543s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/package.dsv
+[61.548s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/ament_index/resource_index/packages/fast_lio
+[61.555s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake
+[61.561s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake
+[61.567s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake
+[61.573s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake
+[61.579s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[61.585s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[61.592s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[61.598s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake
+[61.605s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake
+[61.611s] -- Symlinking: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/package.xml
+[61.618s] -- Installing: /home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so
+[61.618s] -- Set runtime path of "/home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""
+[61.618s] -- Installing: /home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so
+[61.619s] -- Set runtime path of "/home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""
+[61.619s] -- Installing: /home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so
+[61.619s] -- Set runtime path of "/home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""
+[61.619s] -- Installing: /home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so
+[61.619s] -- Set runtime path of "/home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""
+[61.619s] -- Installing: /home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so
+[61.619s] -- Set runtime path of "/home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""
+[61.619s] -- Installing: /home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so
+[61.619s] -- Set runtime path of "/home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""
+[61.619s] -- Installing: /home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so
+[61.619s] -- Set runtime path of "/home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""
+[61.643s] Listing '/home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...
+[61.643s] Compiling '/home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...
+[61.643s] Listing '/home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...
+[61.643s] Compiling '/home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...
+[61.643s] Compiling '/home/nyu/nav_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...
+[61.646s] -- Installing: /home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so
+[61.646s] -- Set runtime path of "/home/nyu/nav_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""
+[61.646s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake
+[61.647s] -- Installing: /home/nyu/nav_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake
+[61.649s] Invoked command in '/home/nyu/nav_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/home/nyu/nav_ws/install/unitree_lidar_ros2:/home/nyu/nav_ws/install/ros2_livox_simulation:/home/nyu/nav_ws/install/rm_navigation:/home/nyu/nav_ws/install/rm_nav_bringup:/home/nyu/nav_ws/install/pointcloud_to_laserscan:/home/nyu/nav_ws/install/point_lio:/home/nyu/nav_ws/install/pcd2pgm:/home/nyu/nav_ws/install/pb_rm_simulation:/home/nyu/nav_ws/install/icp_registration:/home/nyu/nav_ws/install/fast_lio:/home/nyu/nav_ws/install/linefit_ground_segmentation_ros:/home/nyu/nav_ws/install/linefit_ground_segmentation:/home/nyu/nav_ws/install/imu_complementary_filter:/home/nyu/nav_ws/install/fake_vel_transform:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:/home/nyu/nav_ws/install/ros2_livox_simulation/lib:/home/nyu/nav_ws/install/pointcloud_to_laserscan/lib:/home/nyu/nav_ws/install/pcd2pgm/lib:/home/nyu/nav_ws/install/icp_registration/lib:/home/nyu/nav_ws/install/fast_lio/lib:/home/nyu/nav_ws/install/linefit_ground_segmentation/lib:/home/nyu/nav_ws/install/imu_complementary_filter/lib:/home/nyu/nav_ws/install/fake_vel_transform/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 /usr/bin/cmake --install /home/nyu/nav_ws/build/fast_lio

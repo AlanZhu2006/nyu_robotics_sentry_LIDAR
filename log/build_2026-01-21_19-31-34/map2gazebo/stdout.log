@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating map2gazebo.egg-info
+writing map2gazebo.egg-info/PKG-INFO
+writing dependency_links to map2gazebo.egg-info/dependency_links.txt
+writing entry points to map2gazebo.egg-info/entry_points.txt
+writing requirements to map2gazebo.egg-info/requires.txt
+writing top-level names to map2gazebo.egg-info/top_level.txt
+writing manifest file 'map2gazebo.egg-info/SOURCES.txt'
+reading manifest file 'map2gazebo.egg-info/SOURCES.txt'
+writing manifest file 'map2gazebo.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nyu/nav_ws/install/map2gazebo/lib/python3.10/site-packages/map2gazebo.egg-link (link to .)
+Installing map2gazebo script to /home/nyu/nav_ws/install/map2gazebo/lib/map2gazebo
+
+Installed /home/nyu/nav_ws/build/map2gazebo
+running symlink_data
+creating /home/nyu/nav_ws/install/map2gazebo/share/ament_index
+creating /home/nyu/nav_ws/install/map2gazebo/share/ament_index/resource_index
+creating /home/nyu/nav_ws/install/map2gazebo/share/ament_index/resource_index/packages
+symbolically linking /home/nyu/nav_ws/build/map2gazebo/resource/map2gazebo -> /home/nyu/nav_ws/install/map2gazebo/share/ament_index/resource_index/packages
+symbolically linking /home/nyu/nav_ws/build/map2gazebo/package.xml -> /home/nyu/nav_ws/install/map2gazebo/share/map2gazebo
+symbolically linking /home/nyu/nav_ws/build/map2gazebo/launch/map2gazebo.launch.py -> /home/nyu/nav_ws/install/map2gazebo/share/map2gazebo
+symbolically linking /home/nyu/nav_ws/build/map2gazebo/config/default.yaml -> /home/nyu/nav_ws/install/map2gazebo/share/map2gazebo

@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "unitree_lidar_sdk",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "example_lidar_serial::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example_lidar_serial-Release-619200885e0db81152c5.json",
+					"name" : "example_lidar_serial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "example_lidar_udp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-example_lidar_udp-Release-e53848de37e6e7641973.json",
+					"name" : "example_lidar_udp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "set_ip_address::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-set_ip_address-Release-ec563969dc4dbf455a1c.json",
+					"name" : "set_ip_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "set_to_serial_mode::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-set_to_serial_mode-Release-9726569d14d1b3d79692.json",
+					"name" : "set_to_serial_mode",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "set_to_udp_mode::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-set_to_udp_mode-Release-25790b5a5cb6fee47a58.json",
+					"name" : "set_to_udp_mode",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nyu/nav_ws/build/unitree_lidar_sdk",
+		"source" : "/home/nyu/nav_ws/src/unilidar_sdk2/unitree_lidar_sdk"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

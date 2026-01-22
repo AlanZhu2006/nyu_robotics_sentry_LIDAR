@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ca32bc4e2406c5527b47.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "icp_registration",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "icp_registration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-icp_registration-91eba96261a7ebde67c8.json",
+					"name" : "icp_registration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "icp_registration_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-icp_registration_node-eeb9fe54c1b4fb8aea9e.json",
+					"name" : "icp_registration_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "icp_registration_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-icp_registration_uninstall-6865bbd2b8d01e3dd24b.json",
+					"name" : "icp_registration_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b9022baf99c8790fbe4f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nyu/nav_ws/build/icp_registration",
+		"source" : "/home/nyu/nav_ws/src/pb_rm_simulation/src/rm_localization/icp_registration"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

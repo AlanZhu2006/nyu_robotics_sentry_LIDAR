@@ -1,0 +1,866 @@
+[0.000000] (-) TimerEvent: {}
+[0.000487] (livox_ros_driver2) JobQueued: {'identifier': 'livox_ros_driver2', 'dependencies': OrderedDict()}
+[0.000605] (pcd2pgm) JobQueued: {'identifier': 'pcd2pgm', 'dependencies': OrderedDict()}
+[0.000711] (point_lio) JobQueued: {'identifier': 'point_lio', 'dependencies': OrderedDict()}
+[0.000735] (unitree_lidar_ros2) JobQueued: {'identifier': 'unitree_lidar_ros2', 'dependencies': OrderedDict()}
+[0.000756] (unitree_lidar_sdk) JobQueued: {'identifier': 'unitree_lidar_sdk', 'dependencies': OrderedDict()}
+[0.000779] (livox_ros_driver2) JobStarted: {'identifier': 'livox_ros_driver2'}
+[0.007546] (pcd2pgm) JobStarted: {'identifier': 'pcd2pgm'}
+[0.010237] (point_lio) JobStarted: {'identifier': 'point_lio'}
+[0.011948] (unitree_lidar_ros2) JobStarted: {'identifier': 'unitree_lidar_ros2'}
+[0.013786] (unitree_lidar_sdk) JobStarted: {'identifier': 'unitree_lidar_sdk'}
+[0.017081] (livox_ros_driver2) JobProgress: {'identifier': 'livox_ros_driver2', 'progress': 'cmake'}
+[0.017396] (livox_ros_driver2) Command: {'cmd': ['/usr/bin/cmake', '/home/nyu/nav_ws/src/livox_ros_driver2', '-DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/src/install/livox_ros_driver2'], 'cwd': '/home/nyu/nav_ws/src/build/livox_ros_driver2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/livox_ros_driver2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.020242] (pcd2pgm) JobProgress: {'identifier': 'pcd2pgm', 'progress': 'cmake'}
+[0.020787] (pcd2pgm) Command: {'cmd': ['/usr/bin/cmake', '/home/nyu/nav_ws/src/pcd2pgm', '-DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/src/install/pcd2pgm'], 'cwd': '/home/nyu/nav_ws/src/build/pcd2pgm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/pcd2pgm'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.023218] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'cmake'}
+[0.023760] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '/home/nyu/nav_ws/src/point_lio_ros2', '-DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/src/install/point_lio'], 'cwd': '/home/nyu/nav_ws/src/build/point_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/point_lio'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.026006] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'cmake'}
+[0.026649] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/nyu/nav_ws/src/unilidar_sdk2/unitree_lidar_ros2/src/unitree_lidar_ros2', '-DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/src/install/unitree_lidar_ros2'], 'cwd': '/home/nyu/nav_ws/src/build/unitree_lidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/unitree_lidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.032941] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'cmake'}
+[0.033335] (unitree_lidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '/home/nyu/nav_ws/src/unilidar_sdk2/unitree_lidar_sdk', '-DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/src/install/unitree_lidar_sdk'], 'cwd': '/home/nyu/nav_ws/src/build/unitree_lidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/unitree_lidar_sdk'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.099858] (-) TimerEvent: {}
+[0.104745] (unitree_lidar_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.108411] (point_lio) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.110523] (livox_ros_driver2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.110710] (pcd2pgm) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.111729] (unitree_lidar_sdk) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.181891] (unitree_lidar_sdk) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.185132] (pcd2pgm) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.185470] (point_lio) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.192406] (livox_ros_driver2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.193449] (unitree_lidar_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.194921] (point_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.195138] (pcd2pgm) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.195302] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199077] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199907] (-) TimerEvent: {}
+[0.201292] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.265995] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.266477] (point_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.270388] (pcd2pgm) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.271034] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.271269] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.272862] (point_lio) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.273097] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.273256] (point_lio) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.273513] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.273690] (point_lio) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.274325] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.276976] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.277611] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.280678] (pcd2pgm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.281119] (pcd2pgm) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.281555] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.281804] (pcd2pgm) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.281948] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.282215] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.282428] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.282586] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.282835] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.285253] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.285513] (pcd2pgm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.286081] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300043] (-) TimerEvent: {}
+[0.362098] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.362555] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.364448] (pcd2pgm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.367758] (point_lio) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.367942] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.368264] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.369063] (point_lio) StdoutLine: {'line': b'-- Current CPU architecture: x86_64\n'}
+[0.369657] (pcd2pgm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.369834] (pcd2pgm) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.370256] (pcd2pgm) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.370646] (livox_ros_driver2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.371048] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.371163] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.371740] (livox_ros_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.372580] (pcd2pgm) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.373766] (livox_ros_driver2) StdoutLine: {'line': b'-- livox_ros_driver2 version: 1.2.4\n'}
+[0.374948] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.376155] (point_lio) StdoutLine: {'line': b'-- Processor number:  16\n'}
+[0.376415] (point_lio) StdoutLine: {'line': b'-- core for MP:  3\n'}
+[0.377220] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.378493] (point_lio) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.381457] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.381737] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.382241] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.383341] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.384110] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.384458] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.384810] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.386300] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.387730] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Generating done\n'}
+[0.390226] (unitree_lidar_sdk) StdoutLine: {'line': b'-- Build files have been written to: /home/nyu/nav_ws/src/build/unitree_lidar_sdk\n'}
+[0.393503] (unitree_lidar_sdk) CommandEnded: {'returncode': 0}
+[0.393946] (unitree_lidar_sdk) JobProgress: {'identifier': 'unitree_lidar_sdk', 'progress': 'build'}
+[0.394719] (unitree_lidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nyu/nav_ws/src/build/unitree_lidar_sdk', '--', '-j16', '-l16'], 'cwd': '/home/nyu/nav_ws/src/build/unitree_lidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/unitree_lidar_sdk'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.400127] (-) TimerEvent: {}
+[0.450083] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/example_lidar_serial.dir/examples/example_lidar_serial.cpp.o\x1b[0m\n'}
+[0.450714] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/example_lidar_udp.dir/examples/example_lidar_udp.cpp.o\x1b[0m\n'}
+[0.450993] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/set_ip_address.dir/examples/set_ip_address.cpp.o\x1b[0m\n'}
+[0.454010] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/set_to_udp_mode.dir/examples/set_to_udp_mode.cpp.o\x1b[0m\n'}
+[0.454294] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/set_to_serial_mode.dir/examples/set_to_serial_mode.cpp.o\x1b[0m\n'}
+[0.501053] (-) TimerEvent: {}
+[0.563877] (point_lio) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.568400] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.584738] (pcd2pgm) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.597796] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.601102] (-) TimerEvent: {}
+[0.695976] (point_lio) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.701319] (-) TimerEvent: {}
+[0.711021] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.751591] (point_lio) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.761343] (point_lio) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.768219] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.774003] (point_lio) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.775536] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.786697] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.789538] (point_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.801434] (-) TimerEvent: {}
+[0.802236] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.807742] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.808260] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.818975] (point_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.831646] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.842149] (pcd2pgm) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.846216] (pcd2pgm) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.853277] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.856900] (pcd2pgm) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.873852] (pcd2pgm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.891523] (point_lio) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.892277] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.895951] (point_lio) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.896279] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.896434] (pcd2pgm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.901550] (-) TimerEvent: {}
+[0.934214] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.936122] (livox_ros_driver2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.947736] (pcd2pgm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.950011] (pcd2pgm) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.001752] (-) TimerEvent: {}
+[1.029627] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.030292] (point_lio) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.039886] (livox_ros_driver2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.060040] (pcd2pgm) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.064623] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.064921] (point_lio) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.073093] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.100049] (pcd2pgm) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.101835] (-) TimerEvent: {}
+[1.119606] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.121835] (point_lio) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.122948] (livox_ros_driver2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.131262] (point_lio) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.131554] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.133435] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.140009] (pcd2pgm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.151343] (pcd2pgm) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.201962] (-) TimerEvent: {}
+[1.232063] (point_lio) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.232435] (point_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.232904] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.233492] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.247009] (livox_ros_driver2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.248772] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.252399] (pcd2pgm) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.252712] (pcd2pgm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.285807] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable /home/nyu/nav_ws/src/unilidar_sdk2/unitree_lidar_sdk/bin/set_ip_address\x1b[0m\n'}
+[1.287894] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable /home/nyu/nav_ws/src/unilidar_sdk2/unitree_lidar_sdk/bin/set_to_udp_mode\x1b[0m\n'}
+[1.302115] (-) TimerEvent: {}
+[1.331017] (point_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.332518] (point_lio) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.332919] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.334662] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.375310] (pcd2pgm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.376077] (livox_ros_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.376665] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.376837] (pcd2pgm) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.402324] (-) TimerEvent: {}
+[1.428575] (point_lio) StdoutLine: {'line': b'-- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.429569] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.434589] (point_lio) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.447928] (point_lio) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.451598] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.466218] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 70%] Built target set_ip_address\n'}
+[1.470031] (point_lio) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.470892] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 70%] Built target set_to_udp_mode\n'}
+[1.485558] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable /home/nyu/nav_ws/src/unilidar_sdk2/unitree_lidar_sdk/bin/example_lidar_serial\x1b[0m\n'}
+[1.494820] (point_lio) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[1.502606] (-) TimerEvent: {}
+[1.504100] (unitree_lidar_sdk) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable /home/nyu/nav_ws/src/unilidar_sdk2/unitree_lidar_sdk/bin/set_to_serial_mode\x1b[0m\n'}
+[1.511109] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable /home/nyu/nav_ws/src/unilidar_sdk2/unitree_lidar_sdk/bin/example_lidar_udp\x1b[0m\n'}
+[1.545931] (point_lio) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.546211] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.547466] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.570649] (point_lio) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.571511] (unitree_lidar_ros2) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.571635] (livox_ros_driver2) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.603015] (-) TimerEvent: {}
+[1.639181] (pcd2pgm) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.643731] (point_lio) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.644180] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.644362] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.644433] (point_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.644496] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.644615] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.668140] (pcd2pgm) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.681385] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target example_lidar_serial\n'}
+[1.703176] (-) TimerEvent: {}
+[1.703767] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.704046] (point_lio) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.706202] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.723519] (unitree_lidar_ros2) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.724567] (point_lio) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.728288] (livox_ros_driver2) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.735144] (pcd2pgm) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.735421] (pcd2pgm) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.745840] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target set_to_serial_mode\n'}
+[1.756441] (unitree_lidar_sdk) StdoutLine: {'line': b'[100%] Built target example_lidar_udp\n'}
+[1.771049] (unitree_lidar_sdk) CommandEnded: {'returncode': 0}
+[1.777793] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.778116] (unitree_lidar_ros2) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.779423] (point_lio) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.781426] (point_lio) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.782543] (livox_ros_driver2) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.783181] (livox_ros_driver2) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.783525] (pcd2pgm) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.789837] (unitree_lidar_sdk) JobEnded: {'identifier': 'unitree_lidar_sdk', 'rc': 0}
+[1.796249] (pcd2pgm) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.803265] (-) TimerEvent: {}
+[1.838070] (pcd2pgm) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.838343] (pcd2pgm) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.903408] (-) TimerEvent: {}
+[2.003851] (-) TimerEvent: {}
+[2.104845] (-) TimerEvent: {}
+[2.205969] (-) TimerEvent: {}
+[2.306990] (-) TimerEvent: {}
+[2.407741] (-) TimerEvent: {}
+[2.508805] (-) TimerEvent: {}
+[2.610014] (-) TimerEvent: {}
+[2.711131] (-) TimerEvent: {}
+[2.781143] (unitree_lidar_ros2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.784591] (point_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.785446] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.791920] (unitree_lidar_ros2) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.796564] (point_lio) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.798482] (livox_ros_driver2) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.811085] (pcd2pgm) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.811595] (-) TimerEvent: {}
+[2.823219] (pcd2pgm) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.825824] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.828132] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.833293] (point_lio) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.834926] (point_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.838055] (livox_ros_driver2) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.839413] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.862069] (pcd2pgm) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.862858] (pcd2pgm) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.885698] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.889316] (point_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.895086] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.911705] (-) TimerEvent: {}
+[2.918890] (pcd2pgm) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.011965] (-) TimerEvent: {}
+[3.029600] (point_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.037818] (point_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.045726] (point_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.050301] (livox_ros_driver2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.056340] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.058764] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.063261] (pcd2pgm) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.065632] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.069265] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.071347] (pcd2pgm) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.075510] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.078401] (pcd2pgm) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.112039] (-) TimerEvent: {}
+[3.188886] (point_lio) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.203243] (livox_ros_driver2) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.212111] (-) TimerEvent: {}
+[3.227429] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.229958] (pcd2pgm) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.312277] (-) TimerEvent: {}
+[3.345313] (point_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.349500] (livox_ros_driver2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.368275] (unitree_lidar_ros2) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.385356] (pcd2pgm) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.412382] (-) TimerEvent: {}
+[3.486907] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.487642] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.488203] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.489868] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.490511] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.491048] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.491403] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.491602] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.492668] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.493693] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.494653] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.495353] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.495958] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.496647] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.497296] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.498563] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.499941] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.500953] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.502122] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.503062] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.503972] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.504431] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.505588] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.508045] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.510627] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.512485] (-) TimerEvent: {}
+[3.515151] (point_lio) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.516793] (point_lio) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.517639] (point_lio) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.518490] (point_lio) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.519385] (point_lio) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.520370] (point_lio) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.520736] (point_lio) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.521083] (point_lio) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.521916] (point_lio) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.522750] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.522852] (point_lio) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.523701] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.523848] (point_lio) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.525024] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.525309] (point_lio) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.526385] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.526825] (point_lio) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.527307] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.527544] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.527953] (point_lio) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.528044] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.528392] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.528488] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.528774] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.528868] (point_lio) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.529006] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.529127] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.529555] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.529778] (point_lio) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.529913] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.530096] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.530381] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.530634] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.530864] (point_lio) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.530936] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.531157] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.531555] (point_lio) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.531950] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.532119] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.532569] (point_lio) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.532753] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.533039] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.533179] (point_lio) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.533325] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.533788] (point_lio) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.533957] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.534061] (point_lio) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.534165] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.534271] (point_lio) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.534619] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.534821] (point_lio) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.535179] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.535285] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.535496] (point_lio) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.535872] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.536134] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.536458] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.537045] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.537148] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.537759] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.537987] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.538276] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.538965] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.539070] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.539181] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.539445] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.540084] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.540218] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.540945] (pcd2pgm) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.541061] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.542793] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.543184] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.543658] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.545415] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.547649] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.549765] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[3.550349] (unitree_lidar_ros2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:23 (find_package):\n'}
+[3.550424] (unitree_lidar_ros2) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[3.550457] (unitree_lidar_ros2) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[3.550485] (unitree_lidar_ros2) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[3.550513] (unitree_lidar_ros2) StderrLine: {'line': b'\n'}
+[3.550541] (unitree_lidar_ros2) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[3.550566] (unitree_lidar_ros2) StderrLine: {'line': b'\n'}
+[3.550592] (unitree_lidar_ros2) StderrLine: {'line': b'    /usr\n'}
+[3.550617] (unitree_lidar_ros2) StderrLine: {'line': b'\n'}
+[3.550645] (unitree_lidar_ros2) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[3.550671] (unitree_lidar_ros2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[3.550697] (unitree_lidar_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[3.551124] (livox_ros_driver2) StdoutLine: {'line': b"-- Checking for module 'apr-1'\n"}
+[3.554001] (livox_ros_driver2) StdoutLine: {'line': b"--   No package 'apr-1' found\n"}
+[3.559765] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[3.564665] (pcd2pgm) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.565123] (point_lio) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.566200] (pcd2pgm) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.566317] (pcd2pgm) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.566980] (point_lio) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.567038] (point_lio) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.612595] (-) TimerEvent: {}
+[3.642463] (pcd2pgm) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.645878] (point_lio) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[3.660024] (pcd2pgm) StdoutLine: {'line': b"-- Added test 'clang_format' to check C / C++ code style\n"}
+[3.662360] (pcd2pgm) StdoutLine: {'line': b"-- Added test 'clang_tidy' to check C / C++ code style\n"}
+[3.663122] (pcd2pgm) StdoutLine: {'line': b"-- Added test 'black' to check Python code style\n"}
+[3.663774] (pcd2pgm) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.664125] (pcd2pgm) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.667131] (pcd2pgm) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.712708] (-) TimerEvent: {}
+[3.725976] (pcd2pgm) StdoutLine: {'line': b'-- Generating done\n'}
+[3.739182] (pcd2pgm) StdoutLine: {'line': b'-- Build files have been written to: /home/nyu/nav_ws/src/build/pcd2pgm\n'}
+[3.744974] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.760882] (pcd2pgm) CommandEnded: {'returncode': 0}
+[3.762052] (pcd2pgm) JobProgress: {'identifier': 'pcd2pgm', 'progress': 'build'}
+[3.762728] (pcd2pgm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nyu/nav_ws/src/build/pcd2pgm', '--', '-j16', '-l16'], 'cwd': '/home/nyu/nav_ws/src/build/pcd2pgm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/pcd2pgm'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.780950] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[3.788142] (unitree_lidar_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/nyu/nav_ws/src/build/unitree_lidar_ros2\n'}
+[3.790408] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.812814] (-) TimerEvent: {}
+[3.815902] (unitree_lidar_ros2) CommandEnded: {'returncode': 0}
+[3.816998] (unitree_lidar_ros2) JobProgress: {'identifier': 'unitree_lidar_ros2', 'progress': 'build'}
+[3.817341] (unitree_lidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nyu/nav_ws/src/build/unitree_lidar_ros2', '--', '-j16', '-l16'], 'cwd': '/home/nyu/nav_ws/src/build/unitree_lidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/unitree_lidar_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.822128] (pcd2pgm) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pcd2pgm.dir/src/pcd2pgm.cpp.o\x1b[0m\n'}
+[3.824124] (pcd2pgm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pcd2pgm_node.dir/rclcpp_components/node_main_pcd2pgm_node.cpp.o\x1b[0m\n'}
+[3.879662] (unitree_lidar_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/unitree_lidar_ros2_node.dir/src/unitree_lidar_ros2_node.cpp.o\x1b[0m\n'}
+[3.912913] (-) TimerEvent: {}
+[4.013284] (-) TimerEvent: {}
+[4.014937] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.048557] (point_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") \n'}
+[4.113373] (-) TimerEvent: {}
+[4.130326] (point_lio) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.169790] (point_lio) StdoutLine: {'line': b'-- Generating done\n'}
+[4.181516] (point_lio) StdoutLine: {'line': b'-- Build files have been written to: /home/nyu/nav_ws/src/build/point_lio\n'}
+[4.203332] (point_lio) CommandEnded: {'returncode': 0}
+[4.204121] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'build'}
+[4.204621] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nyu/nav_ws/src/build/point_lio', '--', '-j16', '-l16'], 'cwd': '/home/nyu/nav_ws/src/build/point_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nyu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nyu'), ('OLDPWD', '/home/nyu/nav_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '72979'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nyu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nyu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nyu-NUC12WSK-B:@/tmp/.ICE-unix/1695,unix/nyu-NUC12WSK-B:/tmp/.ICE-unix/1695'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/568f1e69_0aea_4657_b234_4ef72aea7c01'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C6URI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.244'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nyu/nav_ws/src/build/point_lio'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.213517] (-) TimerEvent: {}
+[4.269860] (point_lio) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[4.270056] (point_lio) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o\x1b[0m\n'}
+[4.270309] (point_lio) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[4.271094] (point_lio) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\x1b[0m\n'}
+[4.271358] (point_lio) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o\x1b[0m\n'}
+[4.313609] (-) TimerEvent: {}
+[4.355967] (livox_ros_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.384494] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.386724] (livox_ros_driver2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.413816] (-) TimerEvent: {}
+[4.417216] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.417480] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.417689] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.417753] (livox_ros_driver2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.451444] (livox_ros_driver2) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.513953] (-) TimerEvent: {}
+[4.546814] (livox_ros_driver2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.583525] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.593969] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.595003] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nyu/nav_ws/src/livox_ros_driver2/3rdparty;/home/nyu/nav_ws/src/livox_ros_driver2/src\n'}
+[4.595275] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.602323] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.602731] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.605397] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.608900] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.611685] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.614045] (-) TimerEvent: {}
+[4.617910] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.618092] (livox_ros_driver2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.619060] (livox_ros_driver2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.622054] (livox_ros_driver2) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.629841] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0mCMake Error: The following variables are used in this project, but they are set to NOTFOUND.\n'}
+[4.630168] (livox_ros_driver2) StderrLine: {'line': b'Please set them or make sure they are set and tested correctly in the CMake files:\n'}
+[4.630256] (livox_ros_driver2) StderrLine: {'line': b'/home/nyu/nav_ws/src/livox_ros_driver2/LIVOX_INTERFACES_INCLUDE_DIRECTORIES\n'}
+[4.630309] (livox_ros_driver2) StderrLine: {'line': b'   used as include directory in directory /home/nyu/nav_ws/src/livox_ros_driver2\n'}
+[4.630357] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0m\n'}
+[4.714431] (-) TimerEvent: {}
+[4.734838] (livox_ros_driver2) StdoutLine: {'line': b'-- Generating done\n'}
+[4.738823] (livox_ros_driver2) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[4.796886] (livox_ros_driver2) CommandEnded: {'returncode': 1}
+[4.814537] (-) TimerEvent: {}
+[4.818579] (livox_ros_driver2) JobEnded: {'identifier': 'livox_ros_driver2', 'rc': 1}
+[4.914676] (-) TimerEvent: {}
+[5.015248] (-) TimerEvent: {}
+[5.115897] (-) TimerEvent: {}
+[5.216629] (-) TimerEvent: {}
+[5.317019] (-) TimerEvent: {}
+[5.417419] (-) TimerEvent: {}
+[5.517878] (-) TimerEvent: {}
+[5.618279] (-) TimerEvent: {}
+[5.718662] (-) TimerEvent: {}
+[5.819281] (-) TimerEvent: {}
+[5.920017] (-) TimerEvent: {}
+[6.020521] (-) TimerEvent: {}
+[6.120956] (-) TimerEvent: {}
+[6.221321] (-) TimerEvent: {}
+[6.321823] (-) TimerEvent: {}
+[6.422463] (-) TimerEvent: {}
+[6.523458] (-) TimerEvent: {}
+[6.624413] (-) TimerEvent: {}
+[6.725337] (-) TimerEvent: {}
+[6.826101] (-) TimerEvent: {}
+[6.927187] (-) TimerEvent: {}
+[7.028027] (-) TimerEvent: {}
+[7.128609] (-) TimerEvent: {}
+[7.229422] (-) TimerEvent: {}
+[7.330571] (-) TimerEvent: {}
+[7.433489] (-) TimerEvent: {}
+[7.534003] (-) TimerEvent: {}
+[7.634466] (-) TimerEvent: {}
+[7.734911] (-) TimerEvent: {}
+[7.835653] (-) TimerEvent: {}
+[7.938348] (-) TimerEvent: {}
+[8.038840] (-) TimerEvent: {}
+[8.139309] (-) TimerEvent: {}
+[8.239844] (-) TimerEvent: {}
+[8.340626] (-) TimerEvent: {}
+[8.441700] (-) TimerEvent: {}
+[8.542571] (-) TimerEvent: {}
+[8.607373] (pcd2pgm) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable pcd2pgm_node\x1b[0m\n'}
+[8.642913] (-) TimerEvent: {}
+[8.744065] (-) TimerEvent: {}
+[8.844919] (-) TimerEvent: {}
+[8.865812] (pcd2pgm) StdoutLine: {'line': b'[ 75%] Built target pcd2pgm_node\n'}
+[8.945054] (-) TimerEvent: {}
+[9.045529] (-) TimerEvent: {}
+[9.146353] (-) TimerEvent: {}
+[9.247536] (-) TimerEvent: {}
+[9.348690] (-) TimerEvent: {}
+[9.449013] (-) TimerEvent: {}
+[9.549473] (-) TimerEvent: {}
+[9.650013] (-) TimerEvent: {}
+[9.750709] (-) TimerEvent: {}
+[9.851400] (-) TimerEvent: {}
+[9.952306] (-) TimerEvent: {}
+[10.052929] (-) TimerEvent: {}
+[10.153270] (-) TimerEvent: {}
+[10.253647] (-) TimerEvent: {}
+[10.354117] (-) TimerEvent: {}
+[10.454685] (-) TimerEvent: {}
+[10.555510] (-) TimerEvent: {}
+[10.656292] (-) TimerEvent: {}
+[10.756779] (-) TimerEvent: {}
+[10.857290] (-) TimerEvent: {}
+[10.958017] (-) TimerEvent: {}
+[11.058630] (-) TimerEvent: {}
+[11.159403] (-) TimerEvent: {}
+[11.260085] (-) TimerEvent: {}
+[11.360779] (-) TimerEvent: {}
+[11.461759] (-) TimerEvent: {}
+[11.562207] (-) TimerEvent: {}
+[11.662620] (-) TimerEvent: {}
+[11.763023] (-) TimerEvent: {}
+[11.863450] (-) TimerEvent: {}
+[11.963925] (-) TimerEvent: {}
+[12.064608] (-) TimerEvent: {}
+[12.165254] (-) TimerEvent: {}
+[12.265665] (-) TimerEvent: {}
+[12.366095] (-) TimerEvent: {}
+[12.466541] (-) TimerEvent: {}
+[12.567022] (-) TimerEvent: {}
+[12.667775] (-) TimerEvent: {}
+[12.768531] (-) TimerEvent: {}
+[12.868951] (-) TimerEvent: {}
+[12.969457] (-) TimerEvent: {}
+[13.069802] (-) TimerEvent: {}
+[13.170339] (-) TimerEvent: {}
+[13.271049] (-) TimerEvent: {}
+[13.371671] (-) TimerEvent: {}
+[13.472114] (-) TimerEvent: {}
+[13.572532] (-) TimerEvent: {}
+[13.672950] (-) TimerEvent: {}
+[13.773497] (-) TimerEvent: {}
+[13.873999] (-) TimerEvent: {}
+[13.974522] (-) TimerEvent: {}
+[14.075452] (-) TimerEvent: {}
+[14.176461] (-) TimerEvent: {}
+[14.277292] (-) TimerEvent: {}
+[14.377776] (-) TimerEvent: {}
+[14.478632] (-) TimerEvent: {}
+[14.579061] (-) TimerEvent: {}
+[14.679555] (-) TimerEvent: {}
+[14.780698] (-) TimerEvent: {}
+[14.881831] (-) TimerEvent: {}
+[14.982242] (-) TimerEvent: {}
+[15.082685] (-) TimerEvent: {}
+[15.183077] (-) TimerEvent: {}
+[15.283513] (-) TimerEvent: {}
+[15.384013] (-) TimerEvent: {}
+[15.484551] (-) TimerEvent: {}
+[15.585048] (-) TimerEvent: {}
+[15.685361] (-) TimerEvent: {}
+[15.785693] (-) TimerEvent: {}
+[15.886053] (-) TimerEvent: {}
+[15.986412] (-) TimerEvent: {}
+[16.086933] (-) TimerEvent: {}
+[16.187461] (-) TimerEvent: {}
+[16.287826] (-) TimerEvent: {}
+[16.388210] (-) TimerEvent: {}
+[16.488538] (-) TimerEvent: {}
+[16.588905] (-) TimerEvent: {}
+[16.689252] (-) TimerEvent: {}
+[16.789680] (-) TimerEvent: {}
+[16.890447] (-) TimerEvent: {}
+[16.990986] (-) TimerEvent: {}
+[17.091535] (-) TimerEvent: {}
+[17.192229] (-) TimerEvent: {}
+[17.292633] (-) TimerEvent: {}
+[17.393060] (-) TimerEvent: {}
+[17.493551] (-) TimerEvent: {}
+[17.558711] (pcd2pgm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libpcd2pgm.so\x1b[0m\n'}
+[17.593689] (-) TimerEvent: {}
+[17.694263] (-) TimerEvent: {}
+[17.794661] (-) TimerEvent: {}
+[17.895042] (-) TimerEvent: {}
+[17.995424] (-) TimerEvent: {}
+[18.095983] (-) TimerEvent: {}
+[18.196490] (-) TimerEvent: {}
+[18.297249] (-) TimerEvent: {}
+[18.398043] (-) TimerEvent: {}
+[18.498703] (-) TimerEvent: {}
+[18.599381] (-) TimerEvent: {}
+[18.699785] (-) TimerEvent: {}
+[18.800134] (-) TimerEvent: {}
+[18.824720] (pcd2pgm) StdoutLine: {'line': b'[100%] Built target pcd2pgm\n'}
+[18.839141] (pcd2pgm) JobEnded: {'identifier': 'pcd2pgm', 'rc': 'SIGINT'}
+[18.900289] (-) TimerEvent: {}
+[19.000741] (-) TimerEvent: {}
+[19.101229] (-) TimerEvent: {}
+[19.201547] (-) TimerEvent: {}
+[19.301877] (-) TimerEvent: {}
+[19.402189] (-) TimerEvent: {}
+[19.502522] (-) TimerEvent: {}
+[19.602893] (-) TimerEvent: {}
+[19.703387] (-) TimerEvent: {}
+[19.804033] (-) TimerEvent: {}
+[19.904592] (-) TimerEvent: {}
+[20.005000] (-) TimerEvent: {}
+[20.105393] (-) TimerEvent: {}
+[20.205825] (-) TimerEvent: {}
+[20.306167] (-) TimerEvent: {}
+[20.406620] (-) TimerEvent: {}
+[20.507217] (-) TimerEvent: {}
+[20.607673] (-) TimerEvent: {}
+[20.708405] (-) TimerEvent: {}
+[20.809009] (-) TimerEvent: {}
+[20.909702] (-) TimerEvent: {}
+[21.010823] (-) TimerEvent: {}
+[21.111921] (-) TimerEvent: {}
+[21.213060] (-) TimerEvent: {}
+[21.313852] (-) TimerEvent: {}
+[21.414134] (-) TimerEvent: {}
+[21.514556] (-) TimerEvent: {}
+[21.614939] (-) TimerEvent: {}
+[21.715285] (-) TimerEvent: {}
+[21.815725] (-) TimerEvent: {}
+[21.916208] (-) TimerEvent: {}
+[22.016564] (-) TimerEvent: {}
+[22.105699] (unitree_lidar_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable unitree_lidar_ros2_node\x1b[0m\n'}
+[22.116677] (-) TimerEvent: {}
+[22.217004] (-) TimerEvent: {}
+[22.317365] (-) TimerEvent: {}
+[22.417681] (-) TimerEvent: {}
+[22.518094] (-) TimerEvent: {}
+[22.618705] (-) TimerEvent: {}
+[22.687531] (unitree_lidar_ros2) StdoutLine: {'line': b'[100%] Built target unitree_lidar_ros2_node\n'}
+[22.699743] (unitree_lidar_ros2) JobEnded: {'identifier': 'unitree_lidar_ros2', 'rc': 'SIGINT'}
+[22.718789] (-) TimerEvent: {}
+[22.819054] (-) TimerEvent: {}
+[22.919346] (-) TimerEvent: {}
+[23.019644] (-) TimerEvent: {}
+[23.119996] (-) TimerEvent: {}
+[23.220629] (-) TimerEvent: {}
+[23.321104] (-) TimerEvent: {}
+[23.421416] (-) TimerEvent: {}
+[23.521719] (-) TimerEvent: {}
+[23.622089] (-) TimerEvent: {}
+[23.722410] (-) TimerEvent: {}
+[23.822713] (-) TimerEvent: {}
+[23.923009] (-) TimerEvent: {}
+[24.023276] (-) TimerEvent: {}
+[24.123545] (-) TimerEvent: {}
+[24.223834] (-) TimerEvent: {}
+[24.324116] (-) TimerEvent: {}
+[24.424428] (-) TimerEvent: {}
+[24.524747] (-) TimerEvent: {}
+[24.625158] (-) TimerEvent: {}
+[24.725584] (-) TimerEvent: {}
+[24.826328] (-) TimerEvent: {}
+[24.926878] (-) TimerEvent: {}
+[25.027633] (-) TimerEvent: {}
+[25.128392] (-) TimerEvent: {}
+[25.228757] (-) TimerEvent: {}
+[25.329084] (-) TimerEvent: {}
+[25.429432] (-) TimerEvent: {}
+[25.530170] (-) TimerEvent: {}
+[25.630943] (-) TimerEvent: {}
+[25.731434] (-) TimerEvent: {}
+[25.831718] (-) TimerEvent: {}
+[25.932120] (-) TimerEvent: {}
+[26.032453] (-) TimerEvent: {}
+[26.132908] (-) TimerEvent: {}
+[26.233398] (-) TimerEvent: {}
+[26.333923] (-) TimerEvent: {}
+[26.434219] (-) TimerEvent: {}
+[26.534528] (-) TimerEvent: {}
+[26.634825] (-) TimerEvent: {}
+[26.735146] (-) TimerEvent: {}
+[26.835437] (-) TimerEvent: {}
+[26.935770] (-) TimerEvent: {}
+[27.036051] (-) TimerEvent: {}
+[27.136250] (-) TimerEvent: {}
+[27.236501] (-) TimerEvent: {}
+[27.336760] (-) TimerEvent: {}
+[27.437060] (-) TimerEvent: {}
+[27.537381] (-) TimerEvent: {}
+[27.637773] (-) TimerEvent: {}
+[27.738259] (-) TimerEvent: {}
+[27.838502] (-) TimerEvent: {}
+[27.938769] (-) TimerEvent: {}
+[28.039034] (-) TimerEvent: {}
+[28.139310] (-) TimerEvent: {}
+[28.239746] (-) TimerEvent: {}
+[28.340312] (-) TimerEvent: {}
+[28.440684] (-) TimerEvent: {}
+[28.541044] (-) TimerEvent: {}
+[28.641336] (-) TimerEvent: {}
+[28.741614] (-) TimerEvent: {}
+[28.841902] (-) TimerEvent: {}
+[28.942236] (-) TimerEvent: {}
+[29.042654] (-) TimerEvent: {}
+[29.143284] (-) TimerEvent: {}
+[29.244068] (-) TimerEvent: {}
+[29.344701] (-) TimerEvent: {}
+[29.445539] (-) TimerEvent: {}
+[29.546142] (-) TimerEvent: {}
+[29.646441] (-) TimerEvent: {}
+[29.746810] (-) TimerEvent: {}
+[29.847244] (-) TimerEvent: {}
+[29.947569] (-) TimerEvent: {}
+[30.047924] (-) TimerEvent: {}
+[30.148262] (-) TimerEvent: {}
+[30.248497] (-) TimerEvent: {}
+[30.348874] (-) TimerEvent: {}
+[30.449263] (-) TimerEvent: {}
+[30.549778] (-) TimerEvent: {}
+[30.650216] (-) TimerEvent: {}
+[30.750493] (-) TimerEvent: {}
+[30.850769] (-) TimerEvent: {}
+[30.951070] (-) TimerEvent: {}
+[31.051366] (-) TimerEvent: {}
+[31.151720] (-) TimerEvent: {}
+[31.252003] (-) TimerEvent: {}
+[31.352340] (-) TimerEvent: {}
+[31.452625] (-) TimerEvent: {}
+[31.552953] (-) TimerEvent: {}
+[31.653245] (-) TimerEvent: {}
+[31.753528] (-) TimerEvent: {}
+[31.853846] (-) TimerEvent: {}
+[31.954183] (-) TimerEvent: {}
+[32.054690] (-) TimerEvent: {}
+[32.155167] (-) TimerEvent: {}
+[32.255428] (-) TimerEvent: {}
+[32.355674] (-) TimerEvent: {}
+[32.455940] (-) TimerEvent: {}
+[32.556185] (-) TimerEvent: {}
+[32.656472] (-) TimerEvent: {}
+[32.756839] (-) TimerEvent: {}
+[32.857191] (-) TimerEvent: {}
+[32.957531] (-) TimerEvent: {}
+[33.057819] (-) TimerEvent: {}
+[33.158139] (-) TimerEvent: {}
+[33.258465] (-) TimerEvent: {}
+[33.358855] (-) TimerEvent: {}
+[33.459385] (-) TimerEvent: {}
+[33.559882] (-) TimerEvent: {}
+[33.660393] (-) TimerEvent: {}
+[33.760960] (-) TimerEvent: {}
+[33.861688] (-) TimerEvent: {}
+[33.961957] (-) TimerEvent: {}
+[34.062218] (-) TimerEvent: {}
+[34.162581] (-) TimerEvent: {}
+[34.263109] (-) TimerEvent: {}
+[34.363620] (-) TimerEvent: {}
+[34.463942] (-) TimerEvent: {}
+[34.564221] (-) TimerEvent: {}
+[34.664556] (-) TimerEvent: {}
+[34.764906] (-) TimerEvent: {}
+[34.865217] (-) TimerEvent: {}
+[34.965658] (-) TimerEvent: {}
+[35.066150] (-) TimerEvent: {}
+[35.166673] (-) TimerEvent: {}
+[35.266950] (-) TimerEvent: {}
+[35.367208] (-) TimerEvent: {}
+[35.467530] (-) TimerEvent: {}
+[35.568096] (-) TimerEvent: {}
+[35.668402] (-) TimerEvent: {}
+[35.768760] (-) TimerEvent: {}
+[35.869107] (-) TimerEvent: {}
+[35.969402] (-) TimerEvent: {}
+[36.069716] (-) TimerEvent: {}
+[36.170002] (-) TimerEvent: {}
+[36.270343] (-) TimerEvent: {}
+[36.370700] (-) TimerEvent: {}
+[36.471172] (-) TimerEvent: {}
+[36.571630] (-) TimerEvent: {}
+[36.672020] (-) TimerEvent: {}
+[36.772257] (-) TimerEvent: {}
+[36.872553] (-) TimerEvent: {}
+[36.972849] (-) TimerEvent: {}
+[37.073310] (-) TimerEvent: {}
+[37.173634] (-) TimerEvent: {}
+[37.274006] (-) TimerEvent: {}
+[37.374326] (-) TimerEvent: {}
+[37.474640] (-) TimerEvent: {}
+[37.574985] (-) TimerEvent: {}
+[37.675529] (-) TimerEvent: {}
+[37.776242] (-) TimerEvent: {}
+[37.876938] (-) TimerEvent: {}
+[37.977375] (-) TimerEvent: {}
+[38.077804] (-) TimerEvent: {}
+[38.178187] (-) TimerEvent: {}
+[38.278469] (-) TimerEvent: {}
+[38.378768] (-) TimerEvent: {}
+[38.479063] (-) TimerEvent: {}
+[38.579476] (-) TimerEvent: {}
+[38.680042] (-) TimerEvent: {}
+[38.780580] (-) TimerEvent: {}
+[38.880901] (-) TimerEvent: {}
+[38.981257] (-) TimerEvent: {}
+[39.081655] (-) TimerEvent: {}
+[39.181904] (-) TimerEvent: {}
+[39.282254] (-) TimerEvent: {}
+[39.382628] (-) TimerEvent: {}
+[39.483081] (-) TimerEvent: {}
+[39.583349] (-) TimerEvent: {}
+[39.683604] (-) TimerEvent: {}
+[39.783852] (-) TimerEvent: {}
+[39.884117] (-) TimerEvent: {}
+[39.984392] (-) TimerEvent: {}
+[40.084678] (-) TimerEvent: {}
+[40.184984] (-) TimerEvent: {}
+[40.285273] (-) TimerEvent: {}
+[40.385625] (-) TimerEvent: {}
+[40.485935] (-) TimerEvent: {}
+[40.586194] (-) TimerEvent: {}
+[40.686521] (-) TimerEvent: {}
+[40.786874] (-) TimerEvent: {}
+[40.887306] (-) TimerEvent: {}
+[40.964994] (point_lio) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pointlio_mapping.dir/build.make:76: CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o] Interrupt\n'}
+[40.965262] (point_lio) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pointlio_mapping.dir/all] Interrupt\n'}
+[40.965483] (point_lio) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[40.987362] (-) TimerEvent: {}
+[41.080041] (point_lio) JobEnded: {'identifier': 'point_lio', 'rc': 'SIGINT'}
+[41.087437] (-) TimerEvent: {}
+[41.090672] (-) EventReactorShutdown: {}

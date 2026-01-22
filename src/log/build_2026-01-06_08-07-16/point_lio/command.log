@@ -1,0 +1,1 @@
+Invoking command in '/home/nyu/nav_ws/src/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/src/build/point_lio -- -j16 -l16

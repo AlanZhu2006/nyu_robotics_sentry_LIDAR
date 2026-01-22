@@ -1,0 +1,3 @@
+[console_scripts]
+map2gazebo = map2gazebo.map2gazebo:main
+

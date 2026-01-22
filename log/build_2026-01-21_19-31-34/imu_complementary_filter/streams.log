@@ -1,0 +1,81 @@
+[0.025s] Invoking command in '/home/nyu/nav_ws/build/imu_complementary_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_perception/imu_complementary_filter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/imu_complementary_filter
+[0.210s] -- The C compiler identification is GNU 11.4.0
+[0.211s] -- The CXX compiler identification is GNU 11.4.0
+[0.211s] -- Detecting C compiler ABI info
+[0.211s] -- Detecting C compiler ABI info - done
+[0.211s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.212s] -- Detecting C compile features
+[0.212s] -- Detecting C compile features - done
+[0.213s] -- Detecting CXX compiler ABI info
+[0.308s] -- Detecting CXX compiler ABI info - done
+[0.314s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.314s] -- Detecting CXX compile features
+[0.314s] -- Detecting CXX compile features - done
+[0.316s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.473s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.556s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.590s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.639s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.647s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.658s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.674s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.694s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.740s] -- Found message_filters: 4.3.11 (/opt/ros/humble/share/message_filters/cmake)
+[0.787s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.791s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.911s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.951s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.010s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.018s] -- Looking for pthread.h
+[1.132s] -- Looking for pthread.h - found
+[1.135s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.251s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.251s] -- Found Threads: TRUE  
+[1.304s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.323s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[1.333s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.529s] -- Configuring done
+[1.544s] -- Generating done
+[1.558s] -- Build files have been written to: /home/nyu/nav_ws/build/imu_complementary_filter
+[1.571s] Invoked command in '/home/nyu/nav_ws/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_perception/imu_complementary_filter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/imu_complementary_filter
+[1.574s] Invoking command in '/home/nyu/nav_ws/build/imu_complementary_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/imu_complementary_filter -- -j16 -l16
+[1.628s] [ 40%] [32mBuilding CXX object CMakeFiles/complementary_filter.dir/src/complementary_filter.cpp.o[0m
+[1.628s] [ 40%] [32mBuilding CXX object CMakeFiles/complementary_filter.dir/src/complementary_filter_ros.cpp.o[0m
+[29.284s] [ 60%] [32m[1mLinking CXX shared library libcomplementary_filter.so[0m
+[29.675s] [ 60%] Built target complementary_filter
+[29.710s] [ 80%] [32mBuilding CXX object CMakeFiles/complementary_filter_node.dir/src/complementary_filter_node.cpp.o[0m
+[34.211s] [100%] [32m[1mLinking CXX executable complementary_filter_node[0m
+[34.419s] [100%] Built target complementary_filter_node
+[34.434s] Invoked command in '/home/nyu/nav_ws/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/imu_complementary_filter -- -j16 -l16
+[34.436s] Invoking command in '/home/nyu/nav_ws/build/imu_complementary_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/imu_complementary_filter
+[34.447s] -- Install configuration: ""
+[34.448s] -- Execute custom install script
+[34.448s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/lib/imu_complementary_filter/complementary_filter_node
+[34.458s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/include/imu_complementary_filter/complementary_filter.h
+[34.467s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/include/imu_complementary_filter/complementary_filter_ros.h
+[34.480s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/launch/complementary_filter.launch.py
+[34.492s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/environment/library_path.sh
+[34.505s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/environment/library_path.dsv
+[34.520s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/ament_index/resource_index/package_run_dependencies/imu_complementary_filter
+[34.533s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/ament_index/resource_index/parent_prefix_path/imu_complementary_filter
+[34.546s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/environment/ament_prefix_path.sh
+[34.559s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/environment/ament_prefix_path.dsv
+[34.572s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/environment/path.sh
+[34.585s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/environment/path.dsv
+[34.599s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.bash
+[34.614s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.sh
+[34.627s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.zsh
+[34.641s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.dsv
+[34.654s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/package.dsv
+[34.668s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/ament_index/resource_index/packages/imu_complementary_filter
+[34.681s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.694s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_libraries-extras.cmake
+[34.707s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_targets-extras.cmake
+[34.720s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/cmake/imu_complementary_filterConfig.cmake
+[34.733s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/cmake/imu_complementary_filterConfig-version.cmake
+[34.746s] -- Symlinking: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/package.xml
+[34.758s] -- Installing: /home/nyu/nav_ws/install/imu_complementary_filter/lib/libcomplementary_filter.so
+[34.761s] -- Set runtime path of "/home/nyu/nav_ws/install/imu_complementary_filter/lib/libcomplementary_filter.so" to ""
+[34.761s] -- Installing: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/cmake/export_imu_complementary_filterExport.cmake
+[34.761s] -- Installing: /home/nyu/nav_ws/install/imu_complementary_filter/share/imu_complementary_filter/cmake/export_imu_complementary_filterExport-noconfig.cmake
+[34.765s] Invoked command in '/home/nyu/nav_ws/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nyu/nav_ws/install/map2gazebo:/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/imu_complementary_filter

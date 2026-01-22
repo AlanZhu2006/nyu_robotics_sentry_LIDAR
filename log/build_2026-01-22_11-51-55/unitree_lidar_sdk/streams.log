@@ -1,0 +1,7 @@
+[0.202s] Invoking command in '/home/nyu/nav_ws/build/unitree_lidar_sdk': /usr/bin/cmake --build /home/nyu/nav_ws/build/unitree_lidar_sdk -- -j16 -l16
+[0.255s] [ 20%] Built target example_lidar_serial
+[0.255s] [ 40%] Built target set_ip_address
+[0.257s] [ 80%] Built target example_lidar_udp
+[0.257s] [ 80%] Built target set_to_serial_mode
+[0.264s] [100%] Built target set_to_udp_mode
+[0.308s] Invoked command in '/home/nyu/nav_ws/build/unitree_lidar_sdk' returned '0': /usr/bin/cmake --build /home/nyu/nav_ws/build/unitree_lidar_sdk -- -j16 -l16

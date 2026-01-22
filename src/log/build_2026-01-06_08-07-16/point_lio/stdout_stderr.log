@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target pointlio_mapping[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[ 33%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[100%] Built target pointlio_mapping
