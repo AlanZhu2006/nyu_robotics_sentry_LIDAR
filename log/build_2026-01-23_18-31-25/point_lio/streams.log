@@ -1,0 +1,152 @@
+[0.018s] Invoking command in '/home/nyu/nav_ws/build/point_lio': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/nyu/nav_ws/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/point_lio
+[0.079s] -- The C compiler identification is GNU 11.4.0
+[0.140s] -- The CXX compiler identification is GNU 11.4.0
+[0.147s] -- Detecting C compiler ABI info
+[0.212s] -- Detecting C compiler ABI info - done
+[0.221s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.222s] -- Detecting C compile features
+[0.222s] -- Detecting C compile features - done
+[0.225s] -- Detecting CXX compiler ABI info
+[0.299s] -- Detecting CXX compiler ABI info - done
+[0.308s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.309s] -- Detecting CXX compile features
+[0.309s] -- Detecting CXX compile features - done
+[0.310s] -- Current CPU architecture: x86_64
+[0.313s] -- Processor number:  16
+[0.314s] -- core for MP:  3
+[0.316s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.486s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.590s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.622s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.625s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.632s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.641s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.653s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.684s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.686s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.767s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.798s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.840s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.852s] -- Looking for pthread.h
+[0.925s] -- Looking for pthread.h - found
+[0.925s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.007s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.009s] -- Found Threads: TRUE  
+[1.068s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[1.070s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.087s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.109s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.131s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.183s] -- Checking for module 'eigen3'
+[1.196s] --   Found eigen3, version 3.4.0
+[1.219s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.220s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.246s] -- Checking for module 'flann'
+[1.257s] --   Found flann, version 1.9.1
+[1.289s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.289s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.199s] -- Checking for module 'libusb-1.0'
+[2.219s] --   Found libusb-1.0, version 1.0.25
+[2.275s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.276s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.359s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.561s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.570s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.579s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.769s] -- Found Qhull version 8.0.2
+[2.923s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.048s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.049s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.049s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.050s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.051s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.051s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.052s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.052s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.052s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.053s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.054s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.054s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.055s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.056s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.057s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.057s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.058s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.059s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.060s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.060s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.061s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.061s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.061s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.062s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.063s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.089s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.090s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.090s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.158s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.172s] -- Found livox_ros_driver2: 1.0.0 (/home/nyu/nav_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[3.570s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[3.680s] -- Configuring done
+[3.745s] -- Generating done
+[3.763s] -- Build files have been written to: /home/nyu/nav_ws/build/point_lio
+[3.796s] Invoked command in '/home/nyu/nav_ws/build/point_lio' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/nyu/nav_ws/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/point_lio
+[3.798s] Invoking command in '/home/nyu/nav_ws/build/point_lio': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nyu/nav_ws/build/point_lio -- -j16 -l16
+[3.866s] [ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
+[3.866s] [ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
+[3.866s] [ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o[0m
+[3.867s] [ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[3.867s] [ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[45.988s] [100%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[46.557s] [100%] Built target pointlio_mapping
+[46.567s] Invoked command in '/home/nyu/nav_ws/build/point_lio' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nyu/nav_ws/build/point_lio -- -j16 -l16
+[46.569s] Invoking command in '/home/nyu/nav_ws/build/point_lio': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nyu/nav_ws/build/point_lio
+[46.574s] -- Install configuration: ""
+[46.574s] -- Installing: /home/nyu/nav_ws/install/point_lio/lib/point_lio/pointlio_mapping
+[46.575s] -- Set runtime path of "/home/nyu/nav_ws/install/point_lio/lib/point_lio/pointlio_mapping" to ""
+[46.575s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config
+[46.575s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml
+[46.575s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/ouster64.yaml
+[46.575s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml.backup_extrinsic_R_20260114_002748
+[46.575s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2_no_imu.yaml
+[46.575s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml.backup_before_tilt_fix_1768365690
+[46.576s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml.backup_20260113_225701
+[46.576s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l1.yaml
+[46.576s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml.backup_filter
+[46.576s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/velody16.yaml
+[46.576s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml.backup_before_restore_20260114_003140
+[46.576s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml.backup_20260113_214749
+[46.576s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/horizon.yaml
+[46.577s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/avia.yaml
+[46.577s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/mid360.yaml
+[46.577s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2_clean.yaml
+[46.577s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml.backup_extrinsic_R_20260113_224602
+[46.577s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch
+[46.577s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[46.577s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[46.577s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l2_clean.launch.py
+[46.578s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py
+[46.578s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[46.578s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py
+[46.578s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[46.578s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[46.578s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
+[46.578s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[46.578s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/rviz_cfg
+[46.578s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/environment/path.sh
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/environment/path.dsv
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/local_setup.bash
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/local_setup.sh
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/local_setup.zsh
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/local_setup.dsv
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/package.dsv
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[46.579s] -- Installing: /home/nyu/nav_ws/install/point_lio/share/point_lio/package.xml
+[46.581s] Invoked command in '/home/nyu/nav_ws/build/point_lio' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nyu/nav_ws/build/point_lio

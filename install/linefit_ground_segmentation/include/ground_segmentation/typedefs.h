@@ -1,1 +1,9 @@
-/home/nyu/nav_ws/src/pb_rm_simulation/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation/include/ground_segmentation/typedefs.h
+#pragma once
+
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
+
+
+typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
+
+typedef std::pair<pcl::PointXYZ, pcl::PointXYZ> PointLine;

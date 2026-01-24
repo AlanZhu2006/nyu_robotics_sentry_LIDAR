@@ -1,0 +1,90 @@
+[0.024s] Invoking command in '/home/nyu/nav_ws/build/fake_vel_transform': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_navigation/fake_vel_transform -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/fake_vel_transform
+[0.228s] -- The C compiler identification is GNU 11.4.0
+[0.229s] -- The CXX compiler identification is GNU 11.4.0
+[0.229s] -- Detecting C compiler ABI info
+[0.229s] -- Detecting C compiler ABI info - done
+[0.229s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.229s] -- Detecting C compile features
+[0.229s] -- Detecting C compile features - done
+[0.230s] -- Detecting CXX compiler ABI info
+[0.279s] -- Detecting CXX compiler ABI info - done
+[0.285s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.285s] -- Detecting CXX compile features
+[0.285s] -- Detecting CXX compile features - done
+[0.287s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.484s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.701s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.708s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.719s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.738s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.754s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.807s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.810s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.916s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.950s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.001s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.014s] -- Looking for pthread.h
+[1.116s] -- Looking for pthread.h - found
+[1.116s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.201s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.203s] -- Found Threads: TRUE  
+[1.462s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.463s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.464s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.472s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.500s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/fake_vel_transform` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[1.504s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.504s] -- Configured cppcheck include dirs: /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_navigation/fake_vel_transform/include
+[1.504s] -- Configured cppcheck exclude dirs and/or files: 
+[1.506s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.506s] -- Configured cpplint exclude dirs and/or files: 
+[1.506s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.507s] -- Added test 'lint_cmake' to check CMake code style
+[1.507s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.508s] -- Added test 'xmllint' to check XML markup files
+[1.509s] -- Added test 'clang_format' to check C / C++ code style
+[1.512s] -- Configuring done
+[1.530s] -- Generating done
+[1.537s] -- Build files have been written to: /home/nyu/nav_ws/build/fake_vel_transform
+[1.552s] Invoked command in '/home/nyu/nav_ws/build/fake_vel_transform' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_navigation/fake_vel_transform -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/fake_vel_transform
+[1.554s] Invoking command in '/home/nyu/nav_ws/build/fake_vel_transform': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/fake_vel_transform -- -j16 -l16
+[1.613s] [ 50%] [32mBuilding CXX object CMakeFiles/fake_vel_transform.dir/src/fake_vel_transform.cpp.o[0m
+[1.613s] [ 50%] [32mBuilding CXX object CMakeFiles/fake_vel_transform_node.dir/rclcpp_components/node_main_fake_vel_transform_node.cpp.o[0m
+[4.456s] [ 75%] [32m[1mLinking CXX executable fake_vel_transform_node[0m
+[4.682s] [ 75%] Built target fake_vel_transform_node
+[16.171s] [100%] [32m[1mLinking CXX shared library libfake_vel_transform.so[0m
+[16.752s] [100%] Built target fake_vel_transform
+[16.763s] Invoked command in '/home/nyu/nav_ws/build/fake_vel_transform' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nyu/nav_ws/build/fake_vel_transform -- -j16 -l16
+[16.764s] Invoking command in '/home/nyu/nav_ws/build/fake_vel_transform': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/fake_vel_transform
+[16.769s] -- Install configuration: ""
+[16.769s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/lib/fake_vel_transform/fake_vel_transform_node
+[16.770s] -- Set runtime path of "/home/nyu/nav_ws/install/fake_vel_transform/lib/fake_vel_transform/fake_vel_transform_node" to ""
+[16.770s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/include
+[16.770s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/include/fake_vel_transform
+[16.770s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/include/fake_vel_transform/fake_vel_transform.hpp
+[16.770s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/environment/library_path.sh
+[16.770s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/environment/library_path.dsv
+[16.770s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/lib/libfake_vel_transform.so
+[16.776s] -- Set runtime path of "/home/nyu/nav_ws/install/fake_vel_transform/lib/libfake_vel_transform.so" to ""
+[16.776s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/launch
+[16.776s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/launch/fake_vel_transform.launch.py
+[16.776s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/ament_index/resource_index/package_run_dependencies/fake_vel_transform
+[16.776s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/ament_index/resource_index/parent_prefix_path/fake_vel_transform
+[16.777s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/environment/ament_prefix_path.sh
+[16.777s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/environment/ament_prefix_path.dsv
+[16.777s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/environment/path.sh
+[16.777s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/environment/path.dsv
+[16.777s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/local_setup.bash
+[16.777s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/local_setup.sh
+[16.777s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/local_setup.zsh
+[16.777s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/local_setup.dsv
+[16.778s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/package.dsv
+[16.778s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/ament_index/resource_index/packages/fake_vel_transform
+[16.778s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/ament_index/resource_index/rclcpp_components/fake_vel_transform
+[16.778s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.778s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.778s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/cmake/ament_cmake_export_libraries-extras.cmake
+[16.779s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/cmake/fake_vel_transformConfig.cmake
+[16.779s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/cmake/fake_vel_transformConfig-version.cmake
+[16.779s] -- Installing: /home/nyu/nav_ws/install/fake_vel_transform/share/fake_vel_transform/package.xml
+[16.781s] Invoked command in '/home/nyu/nav_ws/build/fake_vel_transform' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nyu/nav_ws/build/fake_vel_transform

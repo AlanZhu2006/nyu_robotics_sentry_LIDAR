@@ -1,1 +1,1 @@
-/home/nyu/nav_ws/build/point_lio/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/point_lio
+rclcpp;rclpy;sensor_msgs;geometry_msgs;nav_msgs;tf2_ros;pcl_ros;pcl_conversions;visualization_msgs;livox_ros_driver2;ament_lint_auto;ament_lint_common

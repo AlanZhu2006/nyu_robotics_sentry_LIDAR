@@ -315,17 +315,17 @@ fast_lio__rosidl_typesupport_cpp/fast:
 .PHONY : fast_lio__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_fast_lio
+# Target rules for targets named ament_cmake_python_copy_fast_lio
 
 # Build rule for target.
-ament_cmake_python_symlink_fast_lio: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_fast_lio
-.PHONY : ament_cmake_python_symlink_fast_lio
+ament_cmake_python_copy_fast_lio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_fast_lio
+.PHONY : ament_cmake_python_copy_fast_lio
 
 # fast build rule for target.
-ament_cmake_python_symlink_fast_lio/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_fast_lio.dir/build.make CMakeFiles/ament_cmake_python_symlink_fast_lio.dir/build
-.PHONY : ament_cmake_python_symlink_fast_lio/fast
+ament_cmake_python_copy_fast_lio/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_fast_lio.dir/build.make CMakeFiles/ament_cmake_python_copy_fast_lio.dir/build
+.PHONY : ament_cmake_python_copy_fast_lio/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_fast_lio_egg
@@ -768,7 +768,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_fast_lio_egg"
-	@echo "... ament_cmake_python_symlink_fast_lio"
+	@echo "... ament_cmake_python_copy_fast_lio"
 	@echo "... fast_lio"
 	@echo "... fast_lio__cpp"
 	@echo "... fast_lio__py"

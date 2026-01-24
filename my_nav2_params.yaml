@@ -18,26 +18,28 @@ amcl:
     laser_min_range: -1.0
     laser_model_type: "likelihood_field"
     max_beams: 60
-    max_particles: 2000
-    min_particles: 500
+    max_particles: 5000  # Ôö¼ÓÁ£×ÓÊý£¨´Ó2000£©£¬Ö§³ÖÈ«¾Ö¶¨Î»
+    min_particles: 1000  # Ôö¼Ó×îÐ¡Á£×Ó£¨´Ó500£©
     odom_frame_id: "odom"
     pf_err: 0.05
     pf_z: 0.99
-    recovery_alpha_fast: 0.0
-    recovery_alpha_slow: 0.0
+    recovery_alpha_fast: 0.1  # ÆôÓÃ¿ìËÙ»Ö¸´£¨´Ó0.0£©£¬°ïÖú¶ªÊ§ºóÖØÐÂ¶¨Î»
+    recovery_alpha_slow: 0.001  # ÆôÓÃÂýËÙ»Ö¸´£¨´Ó0.0£©
     resample_interval: 1
     robot_model_type: "nav2_amcl::OmniMotionModel"
     save_pose_rate: 0.5
     sigma_hit: 0.2
     tf_broadcast: true
-    transform_tolerance: 5.0
-    update_min_a: 0.2
-    update_min_d: 0.25
+    transform_tolerance: 1.5  # 1.5ÃëÈÝ²î£¨ÕÛÖÐÖµ£¬ÈÝÈÌÊµ¼ÊÏµÍ³ÑÓ³Ù£©
+    update_min_a: 0.15  # ½µµÍ½Ç¶ÈãÐÖµ£¨´Ó0.2£©£¬¸üÆµ·±¸üÐÂ
+    update_min_d: 0.2   # ½µµÍ¾àÀëãÐÖµ£¨´Ó0.25£©
     z_hit: 0.5
     z_max: 0.05
     z_rand: 0.5
     z_short: 0.05
     scan_topic: scan
+    set_initial_pose: true  # ÐèÒª³õÊ¼Î»×Ë
+    always_reset_initial_pose: false  # ²»Ã¿´ÎÖØÖÃ£¬±£³Ö¶¨Î»Á¬ÐøÐÔ
 
 bt_navigator:
   ros__parameters:
@@ -48,10 +50,6 @@ bt_navigator:
     bt_loop_duration: 10
     default_server_timeout: 20
     wait_for_service_timeout: 1000
-    # 'default_nav_through_poses_bt_xml' and 'default_nav_to_pose_bt_xml' are use defaults:
-    # nav2_bt_navigator/navigate_to_pose_w_replanning_and_recovery.xml
-    # nav2_bt_navigator/navigate_through_poses_w_replanning_and_recovery.xml
-    # They can be set here or via a RewrittenYaml remap from a parent launch file to Nav2.
     plugin_lib_names:
       - nav2_compute_path_to_pose_action_bt_node
       - nav2_compute_path_through_poses_action_bt_node
@@ -112,79 +110,66 @@ bt_navigator_navigate_to_pose_rclcpp_node:
 controller_server:
   ros__parameters:
     use_sim_time: False
-    controller_frequency: 20.0
+    controller_frequency: 50.0  # 50HzÒÔ»ñµÃ¸ü¿ìÏìÓ¦
     min_x_velocity_threshold: 0.001
-    min_y_velocity_threshold: 0.5
+    min_y_velocity_threshold: 0.001  # ÐÞ¸´£º´Ó0.5¸ÄÎª0.001£¬±ÜÃâ½Ø¶ÏËùÓÐyËÙ¶È
     min_theta_velocity_threshold: 0.001
     failure_tolerance: 0.3
     progress_checker_plugin: "progress_checker"
-    goal_checker_plugins: ["general_goal_checker"] # "precise_goal_checker"
+    goal_checker_plugins: ["general_goal_checker"]
     controller_plugins: ["FollowPath"]
 
     # Progress checker parameters
     progress_checker:
       plugin: "nav2_controller::SimpleProgressChecker"
-      required_movement_radius: 0.5
-      movement_time_allowance: 10.0
-    # Goal checker parameters
-    #precise_goal_checker:
-    #  plugin: "nav2_controller::SimpleGoalChecker"
-    #  xy_goal_tolerance: 0.25
-    #  yaw_goal_tolerance: 0.25
-    #  stateful: True
+      required_movement_radius: 0.3
+      movement_time_allowance: 15.0
+    
     general_goal_checker:
       stateful: True
       plugin: "nav2_controller::SimpleGoalChecker"
       xy_goal_tolerance: 0.25
-      yaw_goal_tolerance: 0.25
-    # DWB parameters
+      yaw_goal_tolerance: 6.30  # ½Ó½ü2¦Ð£¬ÍêÈ«ºöÂÔ³¯Ïò¼ì²é
+    
+    # DWB parameters - optimized for faster response
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
       debug_trajectory_details: True
-      min_vel_x: 0.0
-      min_vel_y: 0.0
-      max_vel_x: 0.26
-      max_vel_y: 0.26
-      max_vel_theta: 1.0
-      min_speed_xy: 0.0
-      max_speed_xy: 0.26
+      min_vel_x: -0.5   # ÔÊÐíºóÍË
+      min_vel_y: -0.5   # ÔÊÐí²àÒÆ
+      max_vel_x: 0.5    # ÌáËÙµ½0.5 m/s
+      max_vel_y: 0.5    # ÌáËÙµ½0.5 m/s
+      max_vel_theta: 0.0  # ½ûÓÃÐý×ª£¬Ö»ÓÃ vx vy
+      min_speed_xy: 0.0   # ÈÃDWB×ÔÓÉÑ¡ÔñËÙ¶È
+      max_speed_xy: 0.6   # Ìá¸ßºÏ³ÉËÙ¶Èµ½0.6 m/s
       min_speed_theta: 0.0
-      # Add high threshold velocity for turtlebot 3 issue.
-      # https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues/75
-      acc_lim_x: 2.5
-      acc_lim_y: 2.5
-      acc_lim_theta: 3.2
-      decel_lim_x: -2.5
-      decel_lim_y: -2.5
-      decel_lim_theta: -3.2
-      vx_samples: 20
+      acc_lim_x: 2.0      # Ìá¸ß¼ÓËÙ¶È
+      acc_lim_y: 2.0
+      acc_lim_theta: 0.0  # ½ûÓÃÐý×ª¼ÓËÙ¶È
+      decel_lim_x: -2.0
+      decel_lim_y: -2.0
+      decel_lim_theta: 0.0  # ½ûÓÃÐý×ª¼õËÙ¶È
+      vx_samples: 15      # ¼õÉÙ²ÉÑùÊý£¬ËÙ¶È¸ü¿ì
       vy_samples: 5
-      vtheta_samples: 20
-      sim_time: 1.7
+      vtheta_samples: 1   # Ö»²ÉÑù 0 Ðý×ª
+      sim_time: 1.5       # Ôö¼ÓÔ¤²âÊ±¼ä
       linear_granularity: 0.05
       angular_granularity: 0.025
-      transform_tolerance: 5.0
+      transform_tolerance: 1.5  # 1.5ÃëÈÝ²î
       xy_goal_tolerance: 0.25
-      trans_stopped_velocity: 0.25
+      trans_stopped_velocity: 0.05  # ½µµÍÍ£Ö¹ãÐÖµ£¨´Ó0.25£©
       short_circuit_trajectory_evaluation: True
       stateful: True
-      critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      BaseObstacle.scale: 0.02
-      PathAlign.scale: 32.0
-      PathAlign.forward_point_distance: 0.1
-      GoalAlign.scale: 24.0
-      GoalAlign.forward_point_distance: 0.1
-      PathDist.scale: 32.0
-      GoalDist.scale: 24.0
-      RotateToGoal.scale: 32.0
-      RotateToGoal.slowing_factor: 5.0
-      RotateToGoal.lookahead_time: -1.0
+      critics: ["Oscillation", "BaseObstacle", "GoalDist", "PathDist"]  # ¼ò»¯ÆÀ·ÖÆ÷
+      BaseObstacle.scale: 0.08   # Ôö¼ÓÕÏ°­ÎïÈ¨ÖØ£¬¸üºÃ±ÜÕÏ
+      GoalDist.scale: 24.0       # Ä¿±ê¾àÀëÈ¨ÖØ
+      PathDist.scale: 32.0       # Â·¾¶¸ú×ÙÈ¨ÖØ
 
 local_costmap:
   local_costmap:
     ros__parameters:
-      update_frequency: 2.0
-      publish_frequency: 1.0
+      update_frequency: 10.0  # Ìá¸ßµ½10Hz£¨´Ó2Hz£©
+      publish_frequency: 5.0  # Ìá¸ßµ½5Hz£¨´Ó1Hz£©
       global_frame: map
       robot_base_frame: base_link
       use_sim_time: False
@@ -192,13 +177,13 @@ local_costmap:
       width: 3
       height: 3
       resolution: 0.1
-      transform_tolerance: 5.0
+      transform_tolerance: 1.5  # 1.5ÃëÈÝ²î
       robot_radius: 0.22
       plugins: ["voxel_layer", "inflation_layer"]
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
-        inflation_radius: 0.55
+        cost_scaling_factor: 5.0   # Ôö¼Ó´ú¼ÛË¥¼õËÙ¶È
+        inflation_radius: 1.0      # Ôö¼ÓÅòÕÍ°ë¾¶£¬ÌáÇ°±ÜÕÏ
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
@@ -216,10 +201,10 @@ local_costmap:
           clearing: True
           marking: True
           data_type: "LaserScan"
-          raytrace_max_range: 3.0
+          raytrace_max_range: 4.0
           raytrace_min_range: 0.0
-          obstacle_max_range: 2.5
-          obstacle_min_range: 0.4
+          obstacle_max_range: 3.5
+          obstacle_min_range: 0.1
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True
@@ -228,12 +213,12 @@ local_costmap:
 global_costmap:
   global_costmap:
     ros__parameters:
-      update_frequency: 0.5
+      update_frequency: 1.0  # È«¾ÖµØÍ¼¿ÉÒÔÂýÒ»µã
       publish_frequency: 0.5
       global_frame: map
       robot_base_frame: base_link
       use_sim_time: False
-      transform_tolerance: 5.0
+      transform_tolerance: 1.5  # 1.5ÃëÈÝ²î
       robot_radius: 0.22
       resolution: 0.1
       track_unknown_space: true
@@ -249,9 +234,9 @@ global_costmap:
           clearing: True
           marking: True
           data_type: "LaserScan"
-          raytrace_max_range: 3.0
+          raytrace_max_range: 4.0
           raytrace_min_range: 0.0
-          obstacle_max_range: 2.5
+          obstacle_max_range: 3.5
           obstacle_min_range: 0.0
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
@@ -259,14 +244,12 @@ global_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 10.0
-        inflation_radius: 0.55
+        inflation_radius: 0.8
       always_send_full_costmap: True
 
 map_server:
   ros__parameters:
     use_sim_time: False
-    # Overridden in launch by the "map" launch configuration or provided default value.
-    # To use in yaml, remove the default "map" value in the tb3_simulation_launch.py file & provide full path to map below.
     yaml_filename: ""
 
 map_saver:
@@ -279,7 +262,7 @@ map_saver:
 
 planner_server:
   ros__parameters:
-    expected_planner_frequency: 10.0
+    expected_planner_frequency: 5.0  # 5HzÆ½ºâ¹æ»®ÖÊÁ¿ºÍCPU¸ºÔØ
     use_sim_time: False
     planner_plugins: ["GridBased"]
     GridBased:
@@ -303,7 +286,7 @@ behavior_server:
     costmap_topic: local_costmap/costmap_raw
     footprint_topic: local_costmap/published_footprint
     cycle_frequency: 10.0
-    behavior_plugins: ["spin", "backup", "drive_on_heading", "assisted_teleop", "wait"]
+    behavior_plugins: ["spin", "backup", "drive_on_heading", "assisted_teleop", "wait"]  # ±£Áôspinµ«ËÙ¶ÈÎª0
     spin:
       plugin: "nav2_behaviors/Spin"
     backup:
@@ -316,12 +299,12 @@ behavior_server:
       plugin: "nav2_behaviors/AssistedTeleop"
     global_frame: odom
     robot_base_frame: base_link
-    transform_tolerance: 5.0
+    transform_tolerance: 1.5  # 1.5ÃëÈÝ²î
     use_sim_time: False
     simulate_ahead_time: 2.0
-    max_rotational_vel: 1.0
-    min_rotational_vel: 0.4
-    rotational_acc_lim: 3.2
+    max_rotational_vel: 0.0  # ½ûÓÃÐý×ª
+    min_rotational_vel: 0.0  # ½ûÓÃÐý×ª
+    rotational_acc_lim: 0.0  # ½ûÓÃÐý×ª¼ÓËÙ¶È
 
 robot_state_publisher:
   ros__parameters:
@@ -341,14 +324,15 @@ waypoint_follower:
 velocity_smoother:
   ros__parameters:
     use_sim_time: False
-    smoothing_frequency: 10.0
+    smoothing_frequency: 20.0
     scale_velocities: False
     feedback: "OPEN_LOOP"
-    max_velocity: [0.26, 0.26, 1.0]
-    min_velocity: [-0.26, -0.26, -1.0]
-    max_accel: [2.5, 2.5, 3.2]
-    max_decel: [-2.5, -2.5, -3.2]
+    max_velocity: [0.5, 0.5, 0.0]   # ÌáËÙµ½0.5 m/s
+    min_velocity: [-0.5, -0.5, 0.0]
+    max_accel: [2.0, 2.0, 0.0]      # Ìá¸ß¼ÓËÙ¶È
+    max_decel: [-2.0, -2.0, 0.0]
     odom_topic: "odom"
     odom_duration: 0.1
     deadband_velocity: [0.0, 0.0, 0.0]
     velocity_timeout: 1.0
+

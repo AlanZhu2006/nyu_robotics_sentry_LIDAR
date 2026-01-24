@@ -1,0 +1,42 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+creating ../../build/map2gazebo/map2gazebo.egg-info
+writing ../../build/map2gazebo/map2gazebo.egg-info/PKG-INFO
+writing dependency_links to ../../build/map2gazebo/map2gazebo.egg-info/dependency_links.txt
+writing entry points to ../../build/map2gazebo/map2gazebo.egg-info/entry_points.txt
+writing requirements to ../../build/map2gazebo/map2gazebo.egg-info/requires.txt
+writing top-level names to ../../build/map2gazebo/map2gazebo.egg-info/top_level.txt
+writing manifest file '../../build/map2gazebo/map2gazebo.egg-info/SOURCES.txt'
+reading manifest file '../../build/map2gazebo/map2gazebo.egg-info/SOURCES.txt'
+writing manifest file '../../build/map2gazebo/map2gazebo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nyu/nav_ws/build/map2gazebo/build
+creating /home/nyu/nav_ws/build/map2gazebo/build/lib
+creating /home/nyu/nav_ws/build/map2gazebo/build/lib/map2gazebo
+copying map2gazebo/map2gazebo.py -> /home/nyu/nav_ws/build/map2gazebo/build/lib/map2gazebo
+copying map2gazebo/__init__.py -> /home/nyu/nav_ws/build/map2gazebo/build/lib/map2gazebo
+copying map2gazebo/map2gazebo_offline.py -> /home/nyu/nav_ws/build/map2gazebo/build/lib/map2gazebo
+running install
+running install_lib
+creating /home/nyu/nav_ws/install/map2gazebo/lib/python3.10/site-packages/map2gazebo
+copying /home/nyu/nav_ws/build/map2gazebo/build/lib/map2gazebo/map2gazebo.py -> /home/nyu/nav_ws/install/map2gazebo/lib/python3.10/site-packages/map2gazebo
+copying /home/nyu/nav_ws/build/map2gazebo/build/lib/map2gazebo/__init__.py -> /home/nyu/nav_ws/install/map2gazebo/lib/python3.10/site-packages/map2gazebo
+copying /home/nyu/nav_ws/build/map2gazebo/build/lib/map2gazebo/map2gazebo_offline.py -> /home/nyu/nav_ws/install/map2gazebo/lib/python3.10/site-packages/map2gazebo
+byte-compiling /home/nyu/nav_ws/install/map2gazebo/lib/python3.10/site-packages/map2gazebo/map2gazebo.py to map2gazebo.cpython-310.pyc
+byte-compiling /home/nyu/nav_ws/install/map2gazebo/lib/python3.10/site-packages/map2gazebo/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/nyu/nav_ws/install/map2gazebo/lib/python3.10/site-packages/map2gazebo/map2gazebo_offline.py to map2gazebo_offline.cpython-310.pyc
+running install_data
+creating /home/nyu/nav_ws/install/map2gazebo/share/ament_index
+creating /home/nyu/nav_ws/install/map2gazebo/share/ament_index/resource_index
+creating /home/nyu/nav_ws/install/map2gazebo/share/ament_index/resource_index/packages
+copying resource/map2gazebo -> /home/nyu/nav_ws/install/map2gazebo/share/ament_index/resource_index/packages
+copying package.xml -> /home/nyu/nav_ws/install/map2gazebo/share/map2gazebo
+copying launch/map2gazebo.launch.py -> /home/nyu/nav_ws/install/map2gazebo/share/map2gazebo
+copying config/default.yaml -> /home/nyu/nav_ws/install/map2gazebo/share/map2gazebo
+running install_egg_info
+Copying ../../build/map2gazebo/map2gazebo.egg-info to /home/nyu/nav_ws/install/map2gazebo/lib/python3.10/site-packages/map2gazebo-0.0.0-py3.10.egg-info
+running install_scripts
+Installing map2gazebo script to /home/nyu/nav_ws/install/map2gazebo/lib/map2gazebo
+writing list of installed files to '/home/nyu/nav_ws/build/map2gazebo/install.log'

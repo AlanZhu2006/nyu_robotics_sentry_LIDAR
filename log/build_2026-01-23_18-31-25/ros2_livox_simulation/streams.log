@@ -1,0 +1,195 @@
+[0.016s] Invoking command in '/home/nyu/nav_ws/build/ros2_livox_simulation': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_simulation/livox_laser_simulation_RO2 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/ros2_livox_simulation
+[0.074s] -- The C compiler identification is GNU 11.4.0
+[0.132s] -- The CXX compiler identification is GNU 11.4.0
+[0.139s] -- Detecting C compiler ABI info
+[0.217s] -- Detecting C compiler ABI info - done
+[0.226s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.227s] -- Detecting C compile features
+[0.227s] -- Detecting C compile features - done
+[0.230s] -- Detecting CXX compiler ABI info
+[0.321s] -- Detecting CXX compiler ABI info - done
+[0.331s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.331s] -- Detecting CXX compile features
+[0.331s] -- Detecting CXX compile features - done
+[0.334s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.478s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.565s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.617s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.624s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.635s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.650s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.670s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.726s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.730s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.826s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.860s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.910s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.921s] -- Looking for pthread.h
+[0.992s] -- Looking for pthread.h - found
+[0.992s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.076s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.077s] -- Found Threads: TRUE  
+[1.143s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[1.151s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.152s] -- Checking for module 'bullet>=2.82'
+[1.167s] --   Found bullet, version 3.05
+[1.288s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.348s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.370s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.404s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.420s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.426s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.434s] -- Searching for dependencies of ignition-math6
+[1.435s] -- Looking for OGRE...
+[1.436s] -- OGRE_PREFIX_WATCH changed.
+[1.442s] -- Checking for module 'OGRE'
+[1.457s] --   Found OGRE, version 1.9.0
+[1.484s] -- Found Ogre Ghadamon (1.9.0)
+[1.490s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.498s] -- Looking for OGRE_Paging...
+[1.503s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.503s] -- Looking for OGRE_Terrain...
+[1.507s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.507s] -- Looking for OGRE_Property...
+[1.511s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.511s] -- Looking for OGRE_RTShaderSystem...
+[1.514s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.515s] -- Looking for OGRE_Volume...
+[1.518s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.519s] -- Looking for OGRE_Overlay...
+[1.522s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.603s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.604s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.605s] -- Searching for dependencies of ignition-transport8
+[1.619s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.626s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.630s] -- Checking for module 'libzmq >= 4'
+[1.641s] --   Found libzmq , version 4.3.4
+[1.674s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.682s] -- Checking for module 'uuid'
+[1.697s] --   Found uuid, version 2.37.2
+[1.731s] -- Found UUID: TRUE  
+[1.733s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.734s] -- Searching for dependencies of ignition-msgs5
+[1.750s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.756s] -- Checking for module 'tinyxml2'
+[1.770s] --   Found tinyxml2, version 9.0.0
+[1.809s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.811s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.812s] -- Searching for dependencies of ignition-common3
+[1.812s] -- Looking for dlfcn.h - found
+[1.813s] -- Looking for libdl - found
+[1.815s] -- Found DL: TRUE  
+[1.829s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.830s] -- Searching for <ignition-common3> component [graphics]
+[1.833s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.833s] -- Searching for dependencies of ignition-common3-graphics
+[1.834s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.838s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.838s] -- Searching for dependencies of ignition-fuel_tools4
+[1.928s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.935s] -- Checking for module 'jsoncpp'
+[1.948s] --   Found jsoncpp, version 1.9.5
+[1.980s] -- Found JSONCPP: TRUE  
+[1.986s] -- Checking for module 'libzip'
+[1.999s] --   Found libzip, version 1.7.3
+[2.034s] -- Found ZIP: TRUE  
+[2.034s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.035s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.035s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.038s] -- Gazebo version: 11.10
+[2.038s] -- Checking for module 'tbb'
+[2.053s] --   Found tbb, version 2021.5.0
+[2.095s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.101s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.140s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.278s] -- Found livox_ros_driver2: 1.0.0 (/home/nyu/nav_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[2.344s] -- Checking for module 'eigen3'
+[2.365s] --   Found eigen3, version 3.4.0
+[2.415s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.415s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.445s] -- Checking for module 'flann'
+[2.464s] --   Found flann, version 1.9.1
+[2.524s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.524s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[3.582s] -- Checking for module 'libusb-1.0'
+[3.603s] --   Found libusb-1.0, version 1.0.25
+[3.658s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[3.660s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.743s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.911s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.922s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.930s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.120s] -- Found Qhull version 8.0.2
+[4.379s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.592s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[4.593s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[4.593s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[4.593s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[4.594s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[4.596s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[4.596s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[4.597s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[4.598s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[4.599s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[4.601s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[4.602s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[4.603s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[4.605s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[4.606s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[4.607s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[4.609s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[4.610s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[4.611s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[4.612s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[4.613s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[4.614s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[4.614s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[4.615s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[4.617s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[4.639s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono 
+[4.728s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/ros2_livox_simulation` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[4.734s] -- Configuring done
+[4.768s] -- Generating done
+[4.778s] -- Build files have been written to: /home/nyu/nav_ws/build/ros2_livox_simulation
+[4.808s] Invoked command in '/home/nyu/nav_ws/build/ros2_livox_simulation' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/nyu/nav_ws/src/pb_rm_simulation/src/rm_simulation/livox_laser_simulation_RO2 -DCMAKE_INSTALL_PREFIX=/home/nyu/nav_ws/install/ros2_livox_simulation
+[4.811s] Invoking command in '/home/nyu/nav_ws/build/ros2_livox_simulation': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nyu/nav_ws/build/ros2_livox_simulation -- -j16 -l16
+[4.882s] [ 66%] [32mBuilding CXX object CMakeFiles/ros2_livox.dir/src/livox_points_plugin.cpp.o[0m
+[4.882s] [ 66%] [32mBuilding CXX object CMakeFiles/ros2_livox.dir/src/livox_ode_multiray_shape.cpp.o[0m
+[22.957s] [100%] [32m[1mLinking CXX shared library libros2_livox.so[0m
+[23.816s] [100%] Built target ros2_livox
+[23.829s] Invoked command in '/home/nyu/nav_ws/build/ros2_livox_simulation' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/nyu/nav_ws/build/ros2_livox_simulation -- -j16 -l16
+[23.830s] Invoking command in '/home/nyu/nav_ws/build/ros2_livox_simulation': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nyu/nav_ws/build/ros2_livox_simulation
+[23.839s] -- Install configuration: ""
+[23.839s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/include
+[23.840s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox
+[23.840s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox/livox_points_plugin.h
+[23.840s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox/csv_reader.hpp
+[23.840s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/include/ros2_livox/livox_ode_multiray_shape.h
+[23.840s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/library_path.sh
+[23.840s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/library_path.dsv
+[23.840s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/lib/libros2_livox.so
+[23.845s] -- Set runtime path of "/home/nyu/nav_ws/install/ros2_livox_simulation/lib/libros2_livox.so" to ""
+[23.845s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/scan_mode
+[23.845s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/scan_mode/mid360.csv
+[23.867s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/urdf
+[23.867s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/urdf/mid360.xacro
+[23.868s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ament_index/resource_index/package_run_dependencies/ros2_livox_simulation
+[23.868s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ament_index/resource_index/parent_prefix_path/ros2_livox_simulation
+[23.868s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/ament_prefix_path.sh
+[23.868s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/ament_prefix_path.dsv
+[23.868s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/path.sh
+[23.868s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/path.dsv
+[23.868s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.bash
+[23.869s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.sh
+[23.869s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.zsh
+[23.869s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.dsv
+[23.869s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/package.dsv
+[23.869s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ament_index/resource_index/packages/ros2_livox_simulation
+[23.869s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_dependencies-extras.cmake
+[23.869s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_include_directories-extras.cmake
+[23.869s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_libraries-extras.cmake
+[23.869s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ros2_livox_simulationConfig.cmake
+[23.870s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ros2_livox_simulationConfig-version.cmake
+[23.870s] -- Installing: /home/nyu/nav_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/package.xml
+[23.872s] Invoked command in '/home/nyu/nav_ws/build/ros2_livox_simulation' returned '0': AMENT_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nyu/nav_ws/install/livox_ros_driver2:/opt/ros/humble LD_LIBRARY_PATH=/home/nyu/nav_ws/install/livox_ros_driver2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/nyu/nav_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/nyu/nav_ws/build/ros2_livox_simulation

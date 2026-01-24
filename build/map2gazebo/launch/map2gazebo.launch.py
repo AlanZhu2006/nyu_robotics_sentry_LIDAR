@@ -1,1 +1,0 @@
-/home/nyu/nav_ws/src/map2gazebo/launch/map2gazebo.launch.py

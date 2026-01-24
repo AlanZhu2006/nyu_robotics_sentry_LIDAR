@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# --- 脚本功能：一键启动 激光雷达 + Point-LIO + Nav2 ---
+# --- 脚本功能：一键启动 激光雷达 + FAST-LIO + Nav2 ---
 
 # 捕捉 Ctrl+C 信号，退出时自动清理所有后台进程
 trap 'echo "正在关闭所有节点..."; kill $(jobs -p); exit' SIGINT
@@ -11,8 +11,8 @@ rm -f /dev/shm/fastrtps_*
 # 重启 ROS2 daemon
 ros2 daemon stop
 ros2 daemon start
-# 停止所有 Point-LIO 相关进程（确保干净启动）
-echo "   正在停止所有 Point-LIO 相关进程..."
+# 停止所有 Fast-LIO 相关进程（确保干净启动）
+echo "   正在停止所有 Fast-LIO 相关进程..."
 pkill -9 -f fast_lio_mapping 2>/dev/null
 pkill -9 -f livox_ros_driver2 2>/dev/null
 pkill -9 -f pointcloud_to_laserscan 2>/dev/null
@@ -33,7 +33,7 @@ else
     echo "警告: 未检测到 /dev/ttyACM0，跳过权限设置"
 fi
 
-echo ">>> [3/9] 启动 Unitree 激光雷达驱动..."
+echo ">>> [3/9] 启动 MI360 激光雷达驱动..."
 
 # 启动驱动
 ros2 launch livox_ros_driver2 msg_MID360_launch.py &
@@ -55,14 +55,14 @@ ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 odom camera_init &
 ros2 run tf2_ros static_transform_publisher 0 0 0 0 -0.873 0 body base_link &
 ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 base_link base_footprint &
 
-echo ">>> [5/9] 启动 Point-LIO 里程计..."
+echo ">>> [5/9] 启动 FAST-LIO 里程计..."
 # 设置 libusb 环境变量（修复 PCL 兼容性问题）
 export LD_PRELOAD=/lib/x86_64-linux-gnu/libusb-1.0.so.0
 ros2 launch fast_lio mapping.launch.py config_file:=mid360.yaml &
 
 sleep 5
 
-echo ">>> [6/8] 启动 Pointcloud 转 LaserScan..."
+echo ">>> [6/9] 启动 Pointcloud 转 LaserScan..."
 # 关键修改：
 # 1. 输入话题改回 /cloud_registered (因为它是标准的 PointCloud2)
 # 2. 增加 qos_overrides (强制让节点能听到 Best Effort 的数据)
@@ -86,7 +86,7 @@ ros2 launch nav2_bringup bringup_launch.py \
     map:=/home/nyu/Desktop/map/11_map.yaml \
     params_file:=/home/nyu/nav_ws/my_nav2_params.yaml &
 
-echo ">>> 等待 Nav2 启动 (8秒)..."
+echo ">>> [8/9] 等待 Nav2 启动 (8秒)..."
 sleep 8
 
 
