@@ -813,17 +813,19 @@ ros2 run nav2_map_server map_saver_cli -f my_map
 ## 12. References / 参考资料
 
 ### Official Documentation / 官方文档
-- [Livox Mid-360 Manual](https://www.livoxtech.com/mid-360/downloads)
-- [FAST-LIO GitHub](https://github.com/hku-mars/FAST_LIO)
-- [Nav2 Documentation](https://navigation.ros.org/)
-- [ROS 2 Humble Documentation](https://docs.ros.org/en/humble/)
+- [Livox Mid-360 Downloads](https://www.livoxtech.com/mid-360/downloads) - 官方下载页面
+- [Livox Mid-360 User Manual (PDF)](https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/Livox/Livox_Mid-360_User_Manual_EN.pdf) - 用户手册
+- [FAST-LIO2 GitHub](https://github.com/hku-mars/FAST_LIO) - HKU MARS Lab
+- [Point-LIO GitHub](https://github.com/hku-mars/Point-LIO) - HKU MARS Lab
+- [Nav2 Documentation](https://navigation.ros.org/) - ROS 2 导航文档
+- [ROS 2 Humble Documentation](https://docs.ros.org/en/humble/) - ROS 2 官方文档
 
 ### Related Projects / 相关项目
-- [Sentry Chassis Control](https://github.com/NYUSH-Robotics-Club/robomaster-control/tree/alan_sentry_radar)
-- [Livox ROS Driver 2](https://github.com/Livox-SDK/livox_ros_driver2)
-- [Point-LIO](https://github.com/hku-mars/Point-LIO)
-- [Point-LIO ROS2 (Unitree adapted)](https://github.com/dfloreaa/point_lio_ros2)
-- [pcd2pgm](https://github.com/LihanChen2004/pcd2pgm)
+- [Livox ROS Driver 2](https://github.com/Livox-SDK/livox_ros_driver2) - Mid-360 ROS2驱动
+- [Point-LIO ROS2 (Unitree adapted)](https://github.com/dfloreaa/point_lio_ros2) - 宇树L2适配版
+- [pcd2pgm](https://github.com/LihanChen2004/pcd2pgm) - PCD转PGM地图工具
+- [Unitree LiDAR SDK](https://github.com/unitreerobotics/unilidar_sdk) - 宇树L1雷达SDK
+- [Unitree LiDAR SDK2](https://github.com/unitreerobotics/unilidar_sdk2) - 宇树L2雷达SDK
 
 ### Useful Tools / 实用工具
 - **pcl_viewer:** Point cloud visualization / 点云可视化
