@@ -226,7 +226,8 @@ VNC Viewer → 42.192.208.124:9914
 ~/nav_ws/
 ├── src/
 │   ├── FAST_LIO/                # FastLIO2 SLAM
-│   │   ├── config/mid360.yaml   # LiDAR config
+│   │   ├── config/mid360_single.yaml   # 单雷达
+│   │   ├── config/mid360_dual.yaml     # 双雷达 merge
 │   │   └── PCD/scans.pcd        # Saved point cloud
 │   ├── point_lio_ros2/          # Point-LIO SLAM
 │   │   └── config/unilidar_l2.yaml
@@ -420,13 +421,21 @@ Location / 路径: `~/nav_ws/my_nav2_params.yaml`
 
 ### 7.2 FastLIO Parameters / FastLIO参数
 
-Location / 路径: `~/nav_ws/src/FAST_LIO/config/mid360.yaml`
+| 配置 | 路径 | 用途 |
+|------|------|------|
+| 单雷达 | `config/mid360_single.yaml` | msg_MID360_launch.py → CustomMsg → lidar_type: 1 |
+| 双雷达 | `config/mid360_dual.yaml` | 双驱动+merge → PointCloud2 → lidar_type: 0 |
 
 ```yaml
-lidar_type: 2          # 2 = Livox CustomMsg
-scan_line: 4           # Number of scan lines
-scan_rate: 10          # Hz
-point_filter_num: 3    # Point decimation factor
+# mid360_single.yaml（单雷达）
+lidar_type: 1          # 1 = AVIA/CustomMsg（Livox 直接发布）
+scan_line: 4
+scan_rate: 10
+
+# mid360_dual.yaml（双雷达 merge 输出）
+lidar_type: 0          # 0 = default/PointCloud2（merge 节点输出）
+scan_line: 4
+scan_rate: 10
 ```
 
 ### 7.3 Mid-360 Network Config / Mid-360网络配置
@@ -560,7 +569,27 @@ python3 serial_sender.py --port /dev/ttyACM0 --vx 0.1 --duration 1.0
 ```
 
 #### Issue 5: Dual Mid-360 Only One LiDAR Connects / 双雷达只连上一台
-**Symptoms / 症状:** 双驱动方案下，某台雷达无点云输出
+**Symptoms / 症状:** 双驱动方案下，某台雷达无点云输出；或驱动 2 连上了 182 而非 114
+
+**Step 1: 启动前必须 Ping 通两台雷达**
+
+```bash
+# 先配置网络与路由
+sudo ip addr add 192.168.1.2/24 dev enp114s0
+sudo ip addr add 192.168.1.3/24 dev enx00e04c2536b0
+sudo ip route add 192.168.1.114/32 dev enx00e04c2536b0
+sudo ip route add 192.168.1.182/32 dev enp114s0
+
+# 必须两个都通，否则不要启动双雷达
+ping -c 2 -I 192.168.1.2 192.168.1.182   # 应 0% packet loss
+ping -c 2 -I 192.168.1.3 192.168.1.114   # 应 0% packet loss
+```
+
+若 `192.168.1.114` 返回 `Destination Host Unreachable` 或 100% packet loss：
+- 114 未上电、USB 网口未接好、或 USB 转以太网适配器异常
+- **此时不要启动双雷达**，驱动 2 可能错误连上 182，导致两路都是 182 数据
+
+**Step 2: 诊断与话题检查**
 
 ```bash
 # 运行诊断脚本（需先启动双雷达）
@@ -571,7 +600,12 @@ ros2 topic hz /livox/lidar /livox/lidar_1 /livox/lidar_2
 ```
 
 **Solutions / 解决方案:**
-- 确认网络与路由正确：182 走内置网口，114 走 USB 网口
+| 现象 | 可能原因 | 处理 |
+|------|----------|------|
+| Ping 114 失败 | 114 未上电、USB 线未接、网口未配 | 检查硬件、重新配置 `192.168.1.3` |
+| 驱动 2 连上 182 而非 114 | 114 不可达，驱动发现 182 后连上 | 先解决 114 网络，再重启驱动 |
+| 路由/网口错 | 182 走了 USB、114 走了内置 | 确认 `ip route` 指向正确网口 |
+
 - 确认两个驱动进程均在运行：`pgrep -a livox_ros_driver2`
 - 若 "found lidar not defined in user-defined config" 可忽略，每驱动仅配置一台雷达
 
@@ -814,11 +848,13 @@ source install/setup.bash
 
 #### 10.4.1.6 双雷达启动流程 / Dual-LiDAR Launch
 
+**重要：** 启动前须确保两台雷达均能 Ping 通，否则驱动 2 可能误连 182。参见 [Issue 5: 双雷达只连上一台](#issue-5-dual-mid-360-only-one-lidar-connects--双雷达只连上一台)。
+
 **方式一：一键脚本 (推荐)**
 
 ```bash
 cd ~/nav_ws
-./test_dual_lidar.sh
+./test_dual_lidar.sh   # 脚本会先 ping 两台雷达，不通则退出
 ```
 
 **方式二：手动执行**
@@ -842,11 +878,11 @@ ros2 launch livox_dual_merge dual_lidar_merge_launch.py
 | 终端 | 命令 |
 |------|------|
 | 1 | 网络 + 双雷达：`./test_dual_lidar.sh` 或上述手动步骤 |
-| 2 | FAST-LIO：`export LD_PRELOAD=... && ros2 launch fast_lio mapping.launch.py config_file:=mid360.yaml` |
+| 2 | FAST-LIO：`export LD_PRELOAD=... && ros2 launch fast_lio mapping.launch.py config_file:=mid360_dual.yaml` |
 | 3 | TF + 点云转激光 + Nav2（见 [6.2 手动启动步骤](#62-manual-launch-steps--手动启动步骤)） |
 | 4 | RViz：`ros2 run rviz2 rviz2 -d ...` |
 
-FAST-LIO（mid360.yaml）、pointcloud_to_laserscan、Nav2 均**无需修改**，仍订阅 `/livox/lidar`、`/livox/imu` 与 `/cloud_registered`。
+FAST-LIO 需使用 **mid360_dual.yaml**（双雷达 merge 输出 PointCloud2）；pointcloud_to_laserscan、Nav2 仍订阅 `/livox/lidar`、`/livox/imu` 与 `/cloud_registered`。
 
 #### 10.4.1.8 双雷达诊断 / Dual-LiDAR Diagnosis
 

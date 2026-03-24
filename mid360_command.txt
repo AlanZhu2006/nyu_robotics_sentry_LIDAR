@@ -2,19 +2,21 @@ start with one command!!! (nav2)
 ----------------------------
 ~/nav_ws/start_robot.sh
 
-1. Launch Unilidar --- releasing topic /unilidar/cloud and /unilidar/imu (directly copy to activate):
+1. Launch MID360 (单雷达) --- 发布 /livox/lidar (CustomMsg) 和 /livox/imu
 
+# 步骤 1.1 网络配置（必须先执行，否则雷达连不上）
+sudo ip addr add 192.168.1.2/24 dev enp114s0
 cd ~/nav_ws
 source install/setup.bash
 ros2 launch livox_ros_driver2 msg_MID360_launch.py
 
 
 2. Release topic /Odometry:
-
+# 单雷达: config_file:=mid360_single.yaml  双雷达: config_file:=mid360_dual.yaml
 export LD_PRELOAD=/lib/x86_64-linux-gnu/libusb-1.0.so.0
 cd ~/nav_ws
 source install/setup.bash
-ros2 launch fast_lio mapping.launch.py config_file:=mid360.yaml
+ros2 launch fast_lio mapping.launch.py config_file:=mid360_single.yaml
 
 
 3.1 mapping and save (first map then nav)

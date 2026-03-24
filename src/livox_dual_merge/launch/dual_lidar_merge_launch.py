@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-双雷达方案：两个独立驱动 + 合并节点
+双雷达方案：双驱动 + 合并节点（README_LIDAR.md 10.4.1 方案）
 - 驱动1 (内置): 182 -> /livox/lidar_1, /livox/imu_1
-- 驱动2 (USB): 114 -> /livox/lidar_2, /livox/imu_2
-- 合并 -> /livox/lidar, /livox/imu (FAST-LIO 使用)
+- 驱动2 (USB): 114/3 -> /livox/lidar_2, /livox/imu_2
+- 合并 -> /livox/lidar, /livox/imu (PointCloud2，FAST-LIO 用 mid360_dual.yaml)
 """
 import os
 from launch import LaunchDescription
@@ -12,10 +12,9 @@ from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
-    # livox_ros_driver2 config 路径
     livox_share = get_package_share_directory('livox_ros_driver2')
-    config_182 = os.path.join(livox_share, 'config', 'MID360_config.json')
-    config_114 = os.path.join(livox_share, 'config', 'MID360_usb_config.json')
+    config_182 = os.path.join(livox_share, 'config', 'MID360_single_182.json')  # 仅 182，避免收到 114/3 数据
+    config_usb = os.path.join(livox_share, 'config', 'MID360_usb_config.json')   # 仅 3 或 114
 
     params_common = {
         'xfer_format': 1,
@@ -45,7 +44,7 @@ def generate_launch_description():
         executable='livox_ros_driver2_node',
         name='livox_lidar_2',
         output='screen',
-        parameters=[{**params_common, 'user_config_path': config_114}],
+        parameters=[{**params_common, 'user_config_path': config_usb}],
         remappings=[
             ('/livox/lidar', '/livox/lidar_2'),
             ('/livox/imu', '/livox/imu_2'),

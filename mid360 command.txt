@@ -8,27 +8,36 @@ cd ~/nav_ws
 source install/setup.bash
 ros2 launch livox_ros_driver2 msg_MID360_launch.py
 
-1. 双雷达启动 (雷达1内置 182 + 雷达2 USB 114，双驱动+合并):
-# 首次使用需先构建: cd ~/nav_ws && colcon build --packages-select livox_dual_merge && source install/setup.bash
-# 步骤 1.1 网络与路由
+1. 双雷达启动 (雷达1内置 182 + 雷达2 USB 实际 IP .3，单驱动模式):
+# 首次使用需先构建: cd ~/nav_ws && colcon build --packages-select livox_dual_merge livox_ros_driver2 && source install/setup.bash
+# 步骤 1.1 网络与路由（雷达2 实际 IP 为 192.168.1.3，主机 USB 用 .5 避免冲突）
 sudo ip addr add 192.168.1.2/24 dev enp114s0
-sudo ip addr add 192.168.1.3/24 dev enx00e04c2536b0
-sudo ip route add 192.168.1.114/32 dev enx00e04c2536b0
+sudo ip addr add 192.168.1.5/24 dev enx00e04c2536b0
 sudo ip route add 192.168.1.182/32 dev enp114s0
+sudo ip route add 192.168.1.3/32 dev enx00e04c2536b0
 
-# 步骤 1.2 启动双雷达（双驱动+合并，发布 /livox/lidar 和 /livox/imu）
+# 步骤 1.2 启动双雷达（单驱动 MID360_dual_182_3.json，直接发布 /livox/lidar 和 /livox/imu）
 cd ~/nav_ws
 source install/setup.bash
 ros2 launch livox_dual_merge dual_lidar_merge_launch.py
 
 # 或一键运行: ./test_dual_lidar.sh
 
-2. Release topic /Odometry:
+# --- 若 ping 不通，用 arp-scan 确认雷达实际 IP ---
+# 1. 运行诊断: ./diagnose_dual_lidar_network.sh
+# 2. 物理检查: 雷达 114 上电、网线插紧、换 USB 口
+# 3. 确认 USB 网口: ip link show enx00e04c2536b0 应有 LOWER_UP
+# 4. 配置并拉起: sudo ip link set enx00e04c2536b0 up && sudo ip addr add 192.168.1.3/24 dev enx00e04c2536b0
+# 5. 发现实际 IP: sudo arp-scan --interface=enx00e04c2536b0 --localnet
+#    (MID360 IP = 192.168.1.XX，XX=序列号末两位，不一定是 114)
+# 6. 若发现其他 IP，修改 MID360_usb_config.json 中 lidar_configs[0].ip
 
+2. Release topic /Odometry:
+# 单雷达用 mid360_single.yaml，双雷达用 mid360_dual.yaml
 export LD_PRELOAD=/lib/x86_64-linux-gnu/libusb-1.0.so.0
 cd ~/nav_ws
 source install/setup.bash
-ros2 launch fast_lio mapping.launch.py config_file:=mid360.yaml
+ros2 launch fast_lio mapping.launch.py config_file:=mid360_single.yaml
 
 
 3.1 mapping and save (first map then nav)
@@ -108,18 +117,33 @@ python3 serial_sender.py --port /dev/ttyACM0 --vx -0.5 --vy 0.0 --wz 0.0 --durat
 双雷达完整启动流程 (按顺序执行)
 ========================================
 
-# 终端1: 网络 + 双雷达（双驱动+合并）
-sudo ip addr add 192.168.1.2/24 dev enp114s0
 sudo ip addr add 192.168.1.3/24 dev enx00e04c2536b0
-sudo ip route add 192.168.1.114/32 dev enx00e04c2536b0
+sudo arp-scan --interface=enx00e04c2536b0 --localnet
+ping 192.168.1.114
+
+
+chmod +x LivoxViewer2.sh
+
+# 运行脚本
+./LivoxViewer2.sh
+
+# 终端1: 网络 + 双雷达（单驱动 MID360_dual_182_3.json）
+sudo ip addr add 192.168.1.2/24 dev enp114s0
+sudo ip addr add 192.168.1.5/24 dev enx00e04c2536b0
 sudo ip route add 192.168.1.182/32 dev enp114s0
+sudo ip route add 192.168.1.3/32 dev enx00e04c2536b0
 cd ~/nav_ws && source install/setup.bash
 ros2 launch livox_dual_merge dual_lidar_merge_launch.py
 
-# 终端2: FAST-LIO
+
+cd ~/nav_ws
+source install/setup.bash
+ros2 topic hz /livox/lidar
+
+# 终端2: FAST-LIO（双雷达用 mid360_dual.yaml）
 export LD_PRELOAD=/lib/x86_64-linux-gnu/libusb-1.0.so.0
 cd ~/nav_ws && source install/setup.bash
-ros2 launch fast_lio mapping.launch.py config_file:=mid360.yaml
+ros2 launch fast_lio mapping.launch.py config_file:=mid360_dual.yaml
 
 # 终端3: TF + 点云转激光 + Nav2
 ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 odom camera_init &
@@ -136,4 +160,22 @@ ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False \
 
 # 终端4: RViz
 ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
+
+
+nyu@nyush-nuc:~/nav_ws$ export LD_PRELOAD=/lib/x86_64-linux-gnu/libusb-1.0.so.0
+cd ~/nav_ws && source install/setup.bash
+ros2 launch fast_lio mapping.launch.py config_file:=mid360.yaml
+[INFO] [launch]: All log files can be found below /home/nyu/.ros/log/2026-03-06-21-16-20-151332-nyush-nuc-29911
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [fastlio_mapping-1]: process started with pid [29912]
+[INFO] [rviz2-2]: process started with pid [29914]
+[rviz2-2] Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[fastlio_mapping-1] [INFO] [1772802980.587695709] [laser_mapping]: p_pre->lidar_type 0
+[fastlio_mapping-1] Multi thread started 
+[fastlio_mapping-1] ~~~~/home/nyu/nav_ws/src/FAST_LIO/ file opened
+[fastlio_mapping-1] [INFO] [1772802980.596274987] [laser_mapping]: Node init finished.
+[rviz2-2] [INFO] [1772802980.699513127] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1772802980.699563340] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-2] [INFO] [1772802980.710526679] [rviz2]: Stereo is NOT SUPPORTED
+
 
