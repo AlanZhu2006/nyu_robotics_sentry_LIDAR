@@ -26,7 +26,13 @@ SERIAL_SENDER_PORT="${SERIAL_SENDER_PORT:-$RADAR_PTY}"
 SERIAL_SENDER_TOPIC="${SERIAL_SENDER_TOPIC:-/cmd_vel_chassis}"
 ROBOT_CONTROL_TOPIC="${ROBOT_CONTROL_TOPIC:-/robot_control}"
 SERIAL_SENDER_SCRIPT="${SERIAL_SENDER_SCRIPT:-/home/nyu/Codespace/nyush-rm-vision/serial_sender.py}"
+SERIAL_SENDER_DISABLE_STATUS_PUB="${SERIAL_SENDER_DISABLE_STATUS_PUB:-0}"
 BT_COMM_ADAPTER_SCRIPT="${BT_COMM_ADAPTER_SCRIPT:-$SENTRY_PLANNER_ROOT/scripts/bt_comm_adapter.py}"
+BT_ADAPTER_PUBLISH_REFEREE_FALLBACK="${BT_ADAPTER_PUBLISH_REFEREE_FALLBACK:-0}"
+BT_ADAPTER_DEFAULT_GAME_PROGRESS="${BT_ADAPTER_DEFAULT_GAME_PROGRESS:-0}"
+BT_ADAPTER_DEFAULT_STAGE_REMAIN_TIME="${BT_ADAPTER_DEFAULT_STAGE_REMAIN_TIME:-0}"
+BT_ADAPTER_DEFAULT_CURRENT_HP="${BT_ADAPTER_DEFAULT_CURRENT_HP:-600}"
+BT_ADAPTER_DEFAULT_SHOOTER_HEAT="${BT_ADAPTER_DEFAULT_SHOOTER_HEAT:-0}"
 FAKE_VEL_NAV_BASE_FRAME="${FAKE_VEL_NAV_BASE_FRAME:-base_link}"
 FAKE_VEL_USE_PATH_HEADING_COMPENSATION="${FAKE_VEL_USE_PATH_HEADING_COMPENSATION:-false}"
 FAKE_VEL_USE_NAV_WZ="${FAKE_VEL_USE_NAV_WZ:-false}"
@@ -216,7 +222,13 @@ if [ "$START_BT" = "1" ]; then
     fi
 
     echo ">>> [8.5/9] 启动 bt_comm_adapter..."
-    python3 "$BT_COMM_ADAPTER_SCRIPT" &
+    ROS_BT_ADAPTER_PUBLISH_REFEREE_FALLBACK="$(to_ros_bool "$BT_ADAPTER_PUBLISH_REFEREE_FALLBACK")"
+    python3 "$BT_COMM_ADAPTER_SCRIPT" --ros-args \
+        -p publish_referee_fallback:="$ROS_BT_ADAPTER_PUBLISH_REFEREE_FALLBACK" \
+        -p default_game_progress:="$BT_ADAPTER_DEFAULT_GAME_PROGRESS" \
+        -p default_stage_remain_time:="$BT_ADAPTER_DEFAULT_STAGE_REMAIN_TIME" \
+        -p default_current_hp:="$BT_ADAPTER_DEFAULT_CURRENT_HP" \
+        -p default_shooter_heat:="$BT_ADAPTER_DEFAULT_SHOOTER_HEAT" &
     sleep 2
 
     echo ">>> [8.6/9] 启动决策行为树 ($BT_STYLE)..."
@@ -248,7 +260,8 @@ if [ "$START_SERIAL_SENDER" = "1" ]; then
         --port "$SERIAL_SENDER_PORT" \
         --ros2 \
         --topic "$SERIAL_SENDER_TOPIC" \
-        --robot-control-topic "$ROBOT_CONTROL_TOPIC" &
+        --robot-control-topic "$ROBOT_CONTROL_TOPIC" \
+        $( [ "$SERIAL_SENDER_DISABLE_STATUS_PUB" = "1" ] && printf '%s' '--disable-status-pub' ) &
 fi
 
 if [ "$START_ROBOT_CONTROL_KEEPALIVE" = "1" ]; then
